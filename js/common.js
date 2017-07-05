@@ -98,6 +98,10 @@ $(function() {
 		invertX: false,
 		invertY: false
 	});
+
+	var bubbles = $('#bubbles').get(0);
+	var parallaxBubbles = new Parallax(bubbles);
+	
 });
 
 $(window).load(function() {

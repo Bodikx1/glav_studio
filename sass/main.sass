@@ -162,15 +162,13 @@ body
 	display: flex
 	justify-content: space-between
 .left-block
+	position: relative
 	width: 45%
 	height: 100%
+	transform: translateX(-100%)
+	transition: all 0.7s ease
 	overflow: hidden
-	img
-		transform: translateX(-100%)
-		width: 100%
-		height: 100%
-		transition: all 0.7s ease
-
+	
 .right-block
 	position: relative
 	width: 50%
@@ -220,15 +218,150 @@ body
 	height: 11px
 	background: url(../img/part4.png)
 	
+.section1 .left-block
+	position: relative
+	background: url(../img/section1-bg.jpg) center center no-repeat
+	background-size: cover 
+	.bubbles
+		position: absolute !important
+		left: 0
+		top: 0
+		bottom: 0
+		right: 0
+	.bubble1
+		position: absolute !important
+		left: 20px !important
+		bottom: 200px !important
+		top: auto  !important
+		width: 0
+		transition: width 0.7s
+	.bubble3
+		position: absolute
+		left: 40px !important
+		top: 20px !important
+		width: 60px
+		width: 0
+		transition: width 0.7s
+	.bubble4
+		position: absolute !important
+		left: auto !important
+		right: 30px
+		top: 220px  !important
+		width: 0
+		transition: width 0.7s
+	.bubble
+		position: absolute !important
+		width: 0
+		transition: width 0.7s
+	.bubble2
+		left: 40px !important
+		bottom: 180px !important
+		top: auto !important
+	.bubble5
+		left: 130px !important
+		top: 30px !important
+	.bubble6
+		left: 75px !important
+		top: 85px !important
+	.bubble7
+		left: 95px !important
+		top: 110px !important
+	.bubble8
+		left: 105px !important
+		top: 75px !important
+	.bubble9
+		left: auto !important
+		right: 45px
+		top: 285px !important
+	.s-img
+		position: absolute
+		bottom: 40px
+		left: 50%
+		display: flex
+		width: 500px
+		height: 550px
+		transform: translateX(-50%)
+		img
+			margin: auto
+			width: 0
+			transform: rotate(0)
+			transition: all 0s 0.7s
+	.cube1
+		position: absolute
+		bottom: 20px
+		left: 50px
+		width: 200px
+	.youtube-like
+		position: absolute
+		top: 100px
+		left: 100px
+		width: 150px
+	.youtube-like2
+		position: absolute
+		bottom: 150px
+		right: 40px
+		width: 120px
+	.cube2
+		position: absolute
+		right: 40px
+		bottom: 270px
+		width: 120px
+	.like-button
+		position: absolute
+		bottom: 20px
+		right: 200px
+		width: 170px
 
-
-.section
- &.active
- 	.left-block
- 		img	
- 			transform: translateX(0%)
- 	.right-block
- 		transform: translateX(0%)
+.dolphins
+	position: absolute !important
+	top: 40% !important
+	left: 200px !important
+	width: 300px
+	transform: rotate(15deg)
+	
+.section.active
+	.left-block
+		transform: translateX(0%)
+	.right-block
+		transform: translateX(0%)
+	.dolphins
+		top: 100% !important
+		transform: rotate(-20deg)
+		animation: dolphins 1.5s 0.7s forwards
+		
+	.bubble1
+		width: 100px
+		transition: width 0.7s 0.7s
+	.bubble3
+		width: 60px
+		transition: width 0.7s 0.7s
+	.bubble4
+		width: 100px
+		transition: width 0.7s 0.7s
+	.bubble
+		width: 30px
+		transition: width 0.7s 0.7s
+	.s-img
+		img
+			width: 100%
+			transform: rotate(1800deg)
+			transition: all 1.5s 0.7s
+		
+@keyframes dolphins
+	0%
+		top: 100%
+		transform: rotate(-20deg)
+	100%
+		top: 40%
+		transform: rotate(15deg)
+		
+@keyframes letter
+	0%
+		width: 0
+		transform: rotate(0)
+	100%
+		width: 100%
+		transform: rotate(1800deg)
 
 .base-title
 	font-size: 10rem
