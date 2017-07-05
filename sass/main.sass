@@ -442,9 +442,97 @@ body
 		bottom: 1%
 		width: 41%
 		
-			
+.section4 .left-block
+	position: relative
+	background: #96deff 
+	// background-size: cover 	
+	.cloud3
+		position: absolute
+		right: 0
+		top: 0
+		width: 82%
+	.cloud4
+		position: absolute
+		left: 0
+		top: 9%
+		width: 68%
+	.cloud5
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 75.8%
+	.balloon
+		position: absolute
+		left: 65%
+		top: 11%
+		width: 30%
+	.balloon2
+		position: absolute
+		left: 10%
+		top: 8%
+		width: 14%
+	.letter-c
+		position: absolute
+		width: 66%
+		bottom: 20%
+		left: 18%
+		transform-origin: 0 50%
+		transform: perspective(800px)  rotate3d(1, 0, 0, 90deg)
+		transform-style: preserve-3d
+		transition: all 0s 0.7s
+	.zhuravel1,
+	.zhuravel2
+		position: absolute
+		width: 33%
+	.zhuravel1
+		top: 36%
+		left: -33%
+	.zhuravel2
+		left: 62%
+		top: 55%
+	.zhuravel3,
+	.zhuravel4
+		position: absolute
+		width: 22%
+	.zhuravel3
+		bottom: 26%
+		left: 12%
+	.zhuravel4
+		left: 50.35%
+		top: 40%
+	.hand
+		position: absolute
+		width: 83.6%
+		bottom: 0
+		right: 0
+		transform: translateY(100%)
+	.techniks
+		position: absolute
+		left: 47%
+		bottom: 9.6%
+		width: 0
+		transform-origin: 0 50%
+		transform: translateX(-50%)
+		opacity: 0
+	.dots
+		position: absolute
+		left: 57%
+		bottom: 9.6%
+		width: 0
+		transform-origin: 0 50%
+		transform: translateX(-50%)
+		opacity: 0
+		
+		
 
-	
+
+.overflow
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	overflow: hidden	
 .section.active
 	.left-block
 		transform: translateX(0%)
@@ -505,8 +593,40 @@ body
 		animation: paper2 7s 1.7s linear infinite
 	.paper3
 		animation: paper3 7s 1.7s linear infinite
-		
-	
+	.cloud3
+		animation: cloud2 10s 0.7s linear infinite
+	.cloud4
+		animation: cloud3 10s 0.7s linear infinite
+	.cloud5
+		animation: paper1 10s 0.7s linear infinite
+	.balloon
+		animation: balloon 50s 0.7s linear infinite
+	.balloon2
+		animation: balloon2 70s 0.7s linear infinite
+	.letter-c
+		transform: perspective(800px)  rotate3d(1, 0, 0, 0deg)
+		transition: all 1.0s 0.7s
+	.zhuravel1
+		animation: zhuravel1 50s 0.7s linear infinite
+	.zhuravel2
+		animation: zhuravel2 45s 0.7s linear infinite
+	.zhuravel3
+		animation: zhuravel3 25s 0.7s linear infinite
+	.zhuravel4
+		animation: zhuravel4 25s 0.7s linear infinite
+	.hand
+		transform: translateY(0)
+		transition: all 1.0s 1.3s
+	.techniks
+		opacity: 1
+		width: 63.5%
+		transition: opacity 2.3s 1.3s, width 25s
+		animation: dots 20s 0.7s linear infinite
+	.dots
+		opacity: 1
+		width: 89%
+		transition: opacity 2.3s 1.3s, width 25s
+		animation: dots 10s 0.7s linear infinite
 		
 @keyframes dolphins
 	0%
@@ -588,8 +708,108 @@ body
 		transform: translate(10px, 30px)
 	100%
 		transform: translate(0, 0)
+		
+@keyframes cloud3
+	0%
+		transform: translate(0, 0)
+	40%
+		transform: translate(-30px, 30px)
+	70%
+		transform: translate(-15px, 5px)
+	100%
+		transform: translate(0, 0)
+		
+@keyframes balloon
+	0%
+		left: 65%
+	26.92%
+		opacity: 1
+	26.93%
+		opacity: 0
+		left: 100%
+	26.94%
+		left: -30%
+		opacity: 0
+	26.95%
+		opacity: 1
+	100%
+		left: 65% 
+		
+@keyframes balloon2
+	0%
+		left: 10%
+	21.05%
+		opacity: 1
+	21.06%
+		left: -14% 
+		opacity: 0
+	21.07%
+		left: 100% 
+		opacity: 0
+	21.08%
+		opacity: 1
+	100%
+		left: 10% 
+		
+@keyframes zhuravel1
+	0%
+		left: -33%
+	100%
+		left: 100%
+		
+@keyframes zhuravel2
+	0%
+		left: 62%
+	27.95%
+		opacity: 1
+	28%
+		left: 100%
+		opacity: 0
+	28.05%
+		left: -38%
+		opacity: 0
+	28.1%
+		opacity: 1
+	100%
+		left: 62%
 
+@keyframes zhuravel3
+	0%
+		left: 12%
+	72%
+		opacity: 1
+	72.05%
+		left: 100%
+		opacity: 0
+	72.1%
+		left: -22%
+		opacity: 0
+	72.15%
+		opacity: 1
+	100%
+		left: 12%
+		
+@keyframes zhuravel4
+	0%
+		left: 50.35%
+	59.3%
+		opacity: 1
+	59.31%
+		left: -22%
+		opacity: 0
+	59.32%
+		left: 100%
+		opacity: 0
+	59.33%
+		opacity: 1
+	100%
+		left: 50.35%
 
+@keyframes dots
+	0%
+		transform: rotate(0) translateX(-50%)
+	100%
+		transform: rotate(360deg) translateX(-50%)
 
 .base-title
 	font-size: 10rem
