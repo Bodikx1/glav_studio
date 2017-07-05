@@ -205,6 +205,7 @@ body {
 }
 
 .right-block {
+  position: relative;
   width: 50%;
   display: flex;
   align-items: center;
@@ -212,6 +213,50 @@ body {
   color: #fff;
   transform: translateX(100%);
   transition: all 0.7s ease;
+}
+
+.scene {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.part1 {
+  position: absolute;
+  top: 213px !important;
+  left: 328px !important;
+  width: 15px;
+  height: 16px;
+  background: url(../img/part1.png);
+}
+
+.part2 {
+  position: absolute;
+  top: 284px !important;
+  left: 550px !important;
+  width: 14px;
+  height: 14px;
+  background: url(../img/part2.png);
+}
+
+.part3 {
+  position: absolute;
+  top: 300px !important;
+  left: 405px !important;
+  width: 31px;
+  height: 31px;
+  background: url(../img/part3.png);
+}
+
+.part4 {
+  position: absolute;
+  top: 510px !important;
+  left: 378px !important;
+  width: 9px;
+  height: 11px;
+  background: url(../img/part4.png);
 }
 
 .section.active .left-block img {
