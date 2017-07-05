@@ -101,6 +101,20 @@ $(function() {
 
 	var bubbles = $('#bubbles').get(0);
 	var parallaxBubbles = new Parallax(bubbles);
+
+	var cube3 = $('#cube3').get(0);
+	var parallaxCube3 = new Parallax(cube3, {
+		invertX: false,
+		invertY: false
+	});
+
+	var cube4 = $('#cube4').get(0);
+	var parallaxCube4 = new Parallax(cube4, {
+		invertX: false
+	});
+
+	var cube5 = $('#cube5').get(0);
+	var parallaxCube5 = new Parallax(cube5);
 	
 });
 

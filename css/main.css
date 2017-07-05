@@ -386,12 +386,92 @@ body {
   width: 170px;
 }
 
-.dolphins {
+.section1 .left-block .dolphins {
   position: absolute !important;
   top: 40% !important;
   left: 200px !important;
   width: 300px;
   transform: rotate(15deg);
+}
+
+.section2 .left-block {
+  position: relative;
+  background: url(../img/section2-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.section2 .left-block .letter-d {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  width: 90%;
+  transform-origin: 0 0;
+  transform: translateX(-50%) perspective(800px) rotate3d(0, 1, 0, 90deg);
+  transform-style: preserve-3d;
+  transition: all 0s 0.7s;
+}
+
+.section2 .left-block .cloud1 {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: calc(100% + 40px);
+}
+
+.section2 .left-block .venera {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, 100%);
+  transition: all 0s 0.7s;
+}
+
+.section2 .left-block .cloud {
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  width: 85%;
+}
+
+.section2 .left-block .cloud2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 73%;
+}
+
+.section2 .left-block .cubes {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.section2 .left-block .cube3 {
+  position: absolute !important;
+  left: 3% !important;
+  top: auto !important;
+  bottom: 7px !important;
+  width: 38%;
+}
+
+.section2 .left-block .cube4 {
+  position: absolute !important;
+  width: 26%;
+  left: auto !important;
+  top: auto !important;
+  right: 6.55% !important;
+  bottom: 5% !important;
+}
+
+.section2 .left-block .cube5 {
+  position: absolute !important;
+  top: 45% !important;
+  right: 8% !important;
+  left: auto !important;
+  width: 23%;
 }
 
 .section.active .left-block {
@@ -434,6 +514,28 @@ body {
   transition: all 1.5s 0.7s;
 }
 
+.section.active .letter-d {
+  transform: translateX(-50%) perspective(800px) rotate3d(0, 1, 0, 0deg);
+  transition: all 1.0s 0.7s;
+}
+
+.section.active .venera {
+  transform: translate(-50%, 0);
+  transition: all 1.0s 0.7s;
+}
+
+.section.active .cloud1 {
+  animation: cloud1 10s 0.7s linear infinite;
+}
+
+.section.active .cloud {
+  animation: cloud 10s 0.7s linear infinite;
+}
+
+.section.active .cloud2 {
+  animation: cloud2 10s 0.7s linear infinite;
+}
+
 @keyframes dolphins {
   0% {
     top: 100%;
@@ -445,14 +547,54 @@ body {
   }
 }
 
-@keyframes letter {
+@keyframes cloud1 {
   0% {
-    width: 0;
-    transform: rotate(0);
+    transform: translate(-20px, 0);
+  }
+  25% {
+    transform: translate(0, 10px);
+  }
+  50% {
+    transform: translate(20px, 0);
+  }
+  75% {
+    transform: translate(0, 0);
   }
   100% {
-    width: 100%;
-    transform: rotate(1800deg);
+    transform: translate(-20px, 0);
+  }
+}
+
+@keyframes cloud {
+  0% {
+    transform: translate(-10px, 0);
+  }
+  25% {
+    transform: translate(0, -10px);
+  }
+  50% {
+    transform: translate(20px, 0);
+  }
+  75% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-10px, 0);
+  }
+}
+
+@keyframes cloud2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(30px, 0);
+  }
+  75% {
+    transform: translate(15px, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 
