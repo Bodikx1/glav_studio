@@ -197,7 +197,6 @@ body {
   height: 100%;
   transform: translateX(-100%);
   transition: all 0.7s ease;
-  overflow: hidden;
 }
 
 .right-block {
@@ -474,6 +473,91 @@ body {
   width: 23%;
 }
 
+.section3 .left-block {
+  position: relative;
+  background: #545FFF;
+  background-size: cover;
+}
+
+.section3 .left-block .camera1 {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  width: 35%;
+  transform: translateY(-100%);
+  transition: all 0s 0.7s;
+}
+
+.section3 .left-block .camera2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-100%, 100%);
+  transition: all 0s 0.7s;
+}
+
+.section3 .left-block .letter-b {
+  position: absolute;
+  left: 55%;
+  bottom: 46%;
+  width: 0;
+  transform: translate(-50%, 50%);
+  transition: all 0s 0.7s;
+}
+
+.section3 .left-block .letter-b img {
+  width: 100%;
+}
+
+.section3 .left-block .letter-b .padlock {
+  position: absolute;
+  left: 14%;
+  bottom: 12%;
+  width: 68%;
+  transform-origin: 50% 50%;
+  transform: perspective(600px) translateZ(800px);
+  transform-style: preserve-3d;
+  transition: all 0s 0.7s;
+}
+
+.section3 .left-block .paper1 {
+  position: absolute;
+  top: 0;
+  left: 1.5%;
+  width: 41%;
+}
+
+.section3 .left-block .paper2 {
+  position: absolute;
+  left: 0;
+  bottom: 23%;
+  width: 41%;
+}
+
+.section3 .left-block .paper3 {
+  position: absolute;
+  right: 0;
+  bottom: 6%;
+  width: 41%;
+}
+
+.section3 .left-block .key1 {
+  position: absolute !important;
+  top: 23% !important;
+  left: 8.5% !important;
+  width: 21%;
+}
+
+.section3 .left-block .key2 {
+  position: absolute !important;
+  top: auto !important;
+  left: auto !important;
+  right: 1%;
+  bottom: 1%;
+  width: 41%;
+}
+
 .section.active .left-block {
   transform: translateX(0%);
 }
@@ -536,6 +620,41 @@ body {
   animation: cloud2 10s 0.7s linear infinite;
 }
 
+.section.active .camera1 {
+  transform: translateY(0);
+  transition: all 1.0s 0.7s;
+  transform-origin: 95% 0;
+  transform-style: preserve-3d;
+  animation: camera1 7s 1.7s linear infinite;
+}
+
+.section.active .camera2 {
+  transform: translate(0, 0);
+  transition: all 1.4s 0.7s;
+}
+
+.section.active .letter-b {
+  width: 68%;
+  transition: all 1.4s 0.7s;
+}
+
+.section.active .letter-b .padlock {
+  transform: perspective(600px) translateZ(0);
+  transition: all 1.4s 2.1s;
+}
+
+.section.active .paper1 {
+  animation: paper1 7s 1.7s linear infinite;
+}
+
+.section.active .paper2 {
+  animation: paper2 7s 1.7s linear infinite;
+}
+
+.section.active .paper3 {
+  animation: paper3 7s 1.7s linear infinite;
+}
+
 @keyframes dolphins {
   0% {
     top: 100%;
@@ -592,6 +711,63 @@ body {
   }
   75% {
     transform: translate(15px, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes camera1 {
+  0% {
+    transform: perspective(800px) rotate3d(0, 1, 0, 1deg);
+  }
+  50% {
+    transform: perspective(800px) rotate3d(0, 1, 0, 30deg);
+  }
+  100% {
+    transform: perspective(800px) rotate3d(0, 1, 0, 1deg);
+  }
+}
+
+@keyframes paper1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(30px, 0);
+  }
+  60% {
+    transform: translate(30px, -15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes paper2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(-30px, 0);
+  }
+  60% {
+    transform: translate(-30px, -15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes paper3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(30px, 30px);
+  }
+  60% {
+    transform: translate(10px, 30px);
   }
   100% {
     transform: translate(0, 0);

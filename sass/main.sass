@@ -167,7 +167,7 @@ body
 	height: 100%
 	transform: translateX(-100%)
 	transition: all 0.7s ease
-	overflow: hidden
+	// overflow: hidden
 	
 .right-block
 	position: relative
@@ -378,7 +378,71 @@ body
 		right: 8% !important
 		left: auto !important
 		width: 23%
+.section3 .left-block
+	position: relative
+	background: #545FFF 
+	background-size: cover 
+	.camera1
+		position: absolute
+		top: 0
+		right: 5%
+		width: 35%
+		transform: translateY(-100%)
+		transition: all 0s 0.7s
+	.camera2
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 35%
+		transform: translate(-100%, 100%)
+		transition: all 0s 0.7s
+	.letter-b
+		position: absolute
+		left: 55%
+		bottom: 46%
+		width: 0
+		transform: translate(-50%, 50%)
+		transition: all 0s 0.7s
+		img
+			width: 100%
+		.padlock
+			position: absolute
+			left: 14%
+			bottom: 12%
+			width: 68%
+			transform-origin: 50% 50%
+			transform: perspective(600px) translateZ(800px)
+			transform-style: preserve-3d
+			transition: all 0s 0.7s
+	.paper1
+		position: absolute
+		top: 0
+		left: 1.5%
+		width: 41%
+	.paper2
+		position: absolute
+		left: 0
+		bottom: 23%
+		width: 41%
+	.paper3
+		position: absolute
+		right: 0
+		bottom: 6%
+		width: 41%
+	.key1
+		position: absolute !important
+		top: 23% !important
+		left: 8.5% !important
+		width: 21%
+	.key2
+		position: absolute !important
+		top: auto !important
+		left: auto !important
+		right: 1%
+		bottom: 1%
+		width: 41%
 		
+			
 
 	
 .section.active
@@ -420,6 +484,29 @@ body
 		animation: cloud 10s 0.7s linear infinite
 	.cloud2
 		animation: cloud2 10s 0.7s linear infinite
+	.camera1
+		transform: translateY(0)
+		transition: all 1.0s 0.7s
+		transform-origin: 95% 0
+		transform-style: preserve-3d
+		animation: camera1 7s 1.7s linear infinite
+	.camera2
+		transform: translate(0, 0)
+		transition: all 1.4s 0.7s
+	.letter-b
+		width: 68%
+		transition: all 1.4s 0.7s
+		.padlock
+			transform: perspective(600px) translateZ(0)
+			transition: all 1.4s 2.1s
+	.paper1
+		animation: paper1 7s 1.7s linear infinite
+	.paper2
+		animation: paper2 7s 1.7s linear infinite
+	.paper3
+		animation: paper3 7s 1.7s linear infinite
+		
+	
 		
 @keyframes dolphins
 	0%
@@ -462,7 +549,47 @@ body
 		transform: translate(15px, -5px)
 	100%
 		transform: translate(0, 0)
-	
+		
+@keyframes camera1
+	0%
+		transform: perspective(800px)  rotate3d(0, 1, 0, 1deg)
+	// 25%
+	// 	transform: perspective(800px)  rotate3d(0, 1, 0, -20deg)
+	50%
+		transform: perspective(800px)  rotate3d(0, 1, 0, 30deg)
+	100%
+		transform: perspective(800px)  rotate3d(0, 1, 0, 1deg)
+@keyframes paper1
+	0%
+		transform: translate(0, 0)
+	30%
+		transform: translate(30px, 0)
+	60%
+		transform: translate(30px, -15px)
+	100%
+		transform: translate(0, 0)
+		
+@keyframes paper2
+	0%
+		transform: translate(0, 0)
+	30%
+		transform: translate(-30px, 0)
+	60%
+		transform: translate(-30px, -15px)
+	100%
+		transform: translate(0, 0)
+		
+@keyframes paper3
+	0%
+		transform: translate(0, 0)
+	30%
+		transform: translate(30px, 30px)
+	60%
+		transform: translate(10px, 30px)
+	100%
+		transform: translate(0, 0)
+
+
 
 .base-title
 	font-size: 10rem

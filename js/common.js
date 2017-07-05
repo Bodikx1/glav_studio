@@ -115,6 +115,9 @@ $(function() {
 
 	var cube5 = $('#cube5').get(0);
 	var parallaxCube5 = new Parallax(cube5);
+
+	var keys = $('#keys').get(0);
+	var parallaxKeys = new Parallax(keys);
 	
 });
 
