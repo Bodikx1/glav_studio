@@ -230,23 +230,23 @@ body
 		right: 0
 	.bubble1
 		position: absolute !important
-		left: 20px !important
-		bottom: 200px !important
+		left: 0 !important
+		bottom: 25% !important
 		top: auto  !important
 		width: 0
 		transition: width 0.7s
 	.bubble3
 		position: absolute
-		left: 40px !important
-		top: 20px !important
+		left: 3% !important
+		top: 1% !important
 		width: 60px
 		width: 0
 		transition: width 0.7s
 	.bubble4
 		position: absolute !important
 		left: auto !important
-		right: 30px
-		top: 220px  !important
+		right: 4%
+		top: 25.5%  !important
 		width: 0
 		transition: width 0.7s
 	.bubble
@@ -254,79 +254,77 @@ body
 		width: 0
 		transition: width 0.7s
 	.bubble2
-		left: 40px !important
-		bottom: 180px !important
+		left: 6% !important
+		bottom: 21% !important
 		top: auto !important
 	.bubble5
-		left: 130px !important
-		top: 30px !important
+		left: 20.9% !important
+		top: 2.5% !important
 	.bubble6
-		left: 75px !important
-		top: 85px !important
+		left: 12% !important
+		top: 11.9% !important
 	.bubble7
-		left: 95px !important
-		top: 110px !important
+		left: 16.4% !important
+		top: 15.9% !important
 	.bubble8
-		left: 105px !important
-		top: 75px !important
+		left: 18.4% !important
+		top: 9.8% !important
 	.bubble9
 		left: auto !important
-		right: 45px
-		top: 285px !important
+		right: 7.8%
+		top: 36.2% !important
 	.s-img
 		position: absolute
-		bottom: 40px
+		bottom: 3%
 		left: 50%
 		display: flex
-		width: 500px
-		height: 550px
-		transform: translateX(-50%)
-		img
-			margin: auto
-			width: 0
-			transform: rotate(0)
-			transition: all 0s 0.7s
+		width: 0
+		transform: translateX(-50%) rotate(0)
+		transition: all 0s 0.7s
 	.cube1
 		position: absolute
-		bottom: 20px
-		left: 50px
-		width: 200px
+		bottom: 1%
+		left: 2%
+		width: 32.5%
 	.youtube-like
 		position: absolute
-		top: 100px
-		left: 100px
-		width: 150px
+		top: 18%
+		left: 13.7%
+		width: 26%
 	.youtube-like2
 		position: absolute
-		bottom: 150px
-		right: 40px
-		width: 120px
+		bottom: 4.5%
+		right: 17.4%
+		width: 20%
 	.cube2
 		position: absolute
-		right: 40px
-		bottom: 270px
-		width: 120px
+		right: 4.2%
+		bottom: 32%
+		width: 19%
 	.like-button
 		position: absolute
-		bottom: 20px
-		right: 200px
-		width: 170px
+		bottom: 2%
+		right: 24.4%
+		width: 30.9%
 	.dolphins
 		position: absolute !important
-		top: 40% !important
-		left: 200px !important
-		width: 300px
+		top: 44.9% !important
+		left: 27.9% !important
+		width: 54.5%
 		transform: rotate(15deg)
 		
 .section2 .left-block
 	position: relative
 	background: url(../img/section2-bg.jpg) center center no-repeat
 	background-size: cover 
+	perspective-origin: center -50%
+	perspective: 2000px
+	overflow: hidden
 	.letter-d
 		position: absolute
 		left: 50%
-		bottom: 40px
-		width: 90%
+		bottom: 8.8%
+		width: 87.6%
 		transform-origin: 0 0
 		transform: translateX(-50%) perspective(800px)  rotate3d(0, 1, 0, 90deg)
 		transform-style: preserve-3d
@@ -378,6 +376,29 @@ body
 		right: 8% !important
 		left: auto !important
 		width: 23%
+	.cube3d
+		width: 10.36vw
+		height: 10.36vw
+		// transform: rotate3d(-0.5, 1, 1, 90deg) translateZ(100px)
+		// animation: cube3d 10s infinite linear
+		.side
+			width: 10.36vw
+			height: 10.36vw
+			position: absolute
+			opacity: .7
+			background: skyblue
+		.back 
+			transform: translateZ(-5.18vw) rotateZ(90deg)
+		.left 
+			transform: translateX(-5.18vw) rotateY(90deg)
+		.right 
+			transform: translateX(5.18vw) rotateY(90deg)
+		.top 
+			transform: translateY(-5.18vw) rotateX(90deg)
+		.bottom 
+			transform: translateY(5.18vw) rotateX(90deg)
+			
+
 .section3 .left-block
 	position: relative
 	background: #545FFF 
@@ -508,21 +529,25 @@ body
 		transform: translateY(100%)
 	.techniks
 		position: absolute
-		left: 47%
-		bottom: 9.6%
+		left: 52%
+		bottom: 10.6%
 		width: 0
 		transform-origin: 0 50%
 		transform: translateX(-50%)
 		opacity: 0
 	.dots
 		position: absolute
-		left: 57%
+		left: 54%
 		bottom: 9.6%
 		width: 0
 		transform-origin: 0 50%
 		transform: translateX(-50%)
 		opacity: 0
-		
+	.samolet
+		position: absolute
+		left: 45%
+		bottom: 24%
+		width: 0
 		
 
 
@@ -544,22 +569,21 @@ body
 		animation: dolphins 1.5s 0.7s forwards
 		
 	.bubble1
-		width: 100px
+		width: 24%
 		transition: width 0.7s 0.7s
 	.bubble3
-		width: 60px
+		width: 13%
 		transition: width 0.7s 0.7s
 	.bubble4
-		width: 100px
+		width: 23%
 		transition: width 0.7s 0.7s
 	.bubble
-		width: 30px
+		width: 6.2%
 		transition: width 0.7s 0.7s
 	.s-img
-		img
-			width: 100%
-			transform: rotate(1800deg)
-			transition: all 1.5s 0.7s
+		width: 78.8%
+		transform: translateX(-50%) rotate(1800deg)
+		transition: all 1.5s 0.7s
 	.letter-d
 		transform: translateX(-50%) perspective(800px)  rotate3d(0, 1, 0, 0deg)
 		transition: all 1.0s 0.7s
@@ -627,6 +651,8 @@ body
 		width: 89%
 		transition: opacity 2.3s 1.3s, width 25s
 		animation: dots 10s 0.7s linear infinite
+	.samolet
+		animation: samolet 25s 0.7s linear infinite
 		
 @keyframes dolphins
 	0%
@@ -810,6 +836,29 @@ body
 		transform: rotate(0) translateX(-50%)
 	100%
 		transform: rotate(360deg) translateX(-50%)
+		
+@keyframes samolet
+	0%
+		width: 0
+		left: 45%
+	40%
+		width: 0
+		left: 45%
+	55%
+		width: 30%
+		left: 55%
+	70%
+		width: 60%
+		left: 100% 
+	100%
+		width: 60%
+		left: 100% 
+		
+@keyframes cube3d
+	0%
+		transform: rotate3d(-0.5, 1, 1, 0)
+	100%
+		transform: rotate3d(-0.5, 1, 1, 360deg)
 
 .base-title
 	font-size: 10rem
