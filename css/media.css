@@ -2,17 +2,37 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	p.base-title {
+		font-size: 7rem;
+	}
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 991px) {
+	.s-row .btn-blue {
+		margin: 1rem auto;
+	}
+	.contact .top-btn {
+		top: 1rem;
+	}
+
+	.s-row {
+		margin: 1.5rem auto;
+	}
+
+	p.base-title {
+		font-size: 5rem;
+	}
+
+	div#fp-nav {
+		margin-left: -30px;
+	}
 
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	
+@media only screen and (max-width : 767px) {
+
 	/*Disable Animation on Mobile Devices*/
 	.animated {
 		/*CSS transitions*/
@@ -35,10 +55,102 @@
 		animation: none !important;
 	}
 
+	div#fp-nav {
+		display: none;
+	}
+
+	.s-row .btn-blue {
+		width: 29%;
+		padding: 1rem 2rem;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.logo {
+		max-width: 80%;
+	}
+
+	div.base-text {
+		text-align: justify;
+	}
+
+	div#scene1, div#scene2, div#scene3, div#scene4, div#scene5, div#scene6, div#scene7, div#scene8 {
+		display: none !important;
+	}
+
+	.s-row:nth-child(2) {
+		margin-top: 60px;
+		margin-bottom: 0;
+	}
+
+	.s-row:nth-child(3) {
+		margin: 0 auto;
+	}
+
+	.s-row:nth-child(4) {
+		margin: 0 auto;
+	}
+
+	.s-row:nth-child(5) {
+		margin: 0 auto;
+	}
+
+	input {
+		max-width: 40%;
+	}
+
+	input.email {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.base-form {
+		margin: 0.5rem auto;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+	.s-row .btn-blue {
+		width: calc(100% - 40px);
+		padding: 1rem 4rem 1rem 5rem;
+	}
+
+	.base-form button {
+		padding: 1rem 6rem;
+	}
+
+	.s-row:nth-child(2) {
+		margin-top: 3.5rem;
+		margin-bottom: 10px;
+	}
+
+	.s-row:nth-child(3) {
+		margin: 10px auto;
+	}
+
+	.s-row:nth-child(4) {
+		margin: auto;
+	}
+
+	.s-row:nth-child(5) {
+		margin: auto;
+	}
+
+	input.email {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.base-form {
+		margin: 1rem auto;
+	}
+
+	p.base-title {
+		font-size: 4rem;
+	}
 
 }
 
