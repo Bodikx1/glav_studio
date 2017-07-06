@@ -34,26 +34,26 @@
 @media only screen and (max-width : 767px) {
 
 	/*Disable Animation on Mobile Devices*/
-	.animated {
+	/*.animated {*/
 		/*CSS transitions*/
-		-o-transition-property: none !important;
+		/*-o-transition-property: none !important;
 		-moz-transition-property: none !important;
 		-ms-transition-property: none !important;
 		-webkit-transition-property: none !important;
 		transition-property: none !important;
 		/*CSS transforms*/
-		-o-transform: none !important;
+		/*-o-transform: none !important;
 		-moz-transform: none !important;
 		-ms-transform: none !important;
 		-webkit-transform: none !important;
-		transform: none !important;
+		transform: none !important;*/
 		/*CSS animations*/
-		-webkit-animation: none !important;
+		/*-webkit-animation: none !important;
 		-moz-animation: none !important;
 		-o-animation: none !important;
 		-ms-animation: none !important;
 		animation: none !important;
-	}
+	}*/
 
 	div#fp-nav {
 		display: none;
@@ -108,10 +108,73 @@
 		margin: 0.5rem auto;
 	}
 
+	.content {
+    display: flex;
+  }
+
+	.left-block {
+		display: flex;
+    width: 45%;
+		margin-right: auto;
+  }
+
+	.right-block {
+		width: 55%;
+		margin-left: auto;
+	}
+
+	.right-block .base-text {
+		margin-bottom: 10px;
+	}
+
+	.right-block .base-title {
+		margin-top: 30px;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+	.content {
+    display: flex;
+  }
+
+  .left-block {
+    display: flex;
+    width: 100%;
+		max-height: 73%;
+  }
+
+	.right-block {
+    position: absolute;
+    width: 100%;
+		max-height: 30%;
+    bottom: 0;
+		left: auto;
+  }
+
+	.right-block .base-text {
+		height: 4rem;
+		overflow: hidden;
+		margin-bottom: 15px;
+	}
+
+	section.section1 .right-block {
+		background: #c4f185;
+	}
+
+	section.section2 .right-block {
+		background: #9feeff;
+	}
+
+	section.section3 .right-block {
+		background: #545fff;
+	}
+
+	section.section4 .right-block {
+		background: #96deff;
+	}
 
 	.s-row .btn-blue {
 		width: calc(100% - 40px);
