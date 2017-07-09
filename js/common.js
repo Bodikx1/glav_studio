@@ -118,6 +118,24 @@ $(function() {
 
 	var keys = $('#keys').get(0);
 	var parallaxKeys = new Parallax(keys);
+
+	var dolphin1 = $('#dolphin1').get(0);
+	var parallaxDolphin1 = new Parallax(dolphin1);
+
+	var dolphin2 = $('#dolphin2').get(0);
+	var parallaxDolphin2 = new Parallax(dolphin2, {
+		invertX: false,
+		invertY: false
+	});
+
+	var cube6 = $('#cube6').get(0);
+	var parallaxCube6 = new Parallax(cube6);
+
+	var cube7 = $('#cube7').get(0);
+	var parallaxCube7 = new Parallax(cube7, {
+		invertX: false,
+		invertY: false
+	});
 	
 });
 

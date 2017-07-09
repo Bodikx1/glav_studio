@@ -306,12 +306,23 @@ body
 		bottom: 2%
 		right: 24.4%
 		width: 30.9%
-	.dolphins
+	.dolphin1
 		position: absolute !important
-		top: 44.9% !important
+		bottom: 18.8% !important
+		left: 36.9% !important
+		width: 41.2%
+		transform: translateY(0) rotate(15deg)
+		img
+			width: 100% 
+	.dolphin2
+		position: absolute !important
+		bottom: 16.3% !important
 		left: 27.9% !important
-		width: 54.5%
-		transform: rotate(15deg)
+		width: 54.7%
+		transform: translateY(0) rotate(15deg)
+		img
+			width: 100% 
+	
 		
 .section2 .left-block
 	position: relative
@@ -319,7 +330,6 @@ body
 	background-size: cover 
 	perspective-origin: center -50%
 	perspective: 2000px
-	overflow: hidden
 	.letter-d
 		position: absolute
 		left: 50%
@@ -376,27 +386,87 @@ body
 		right: 8% !important
 		left: auto !important
 		width: 23%
+	.cube6
+		position: absolute !important
+		top: 30% !important
+		right: 15% 
+		left: auto !important
+		width: 9vw
+		height: 9vw
+	.cube7
+		position: absolute !important
+		top: 20% !important
+		left: 15% !important
+		width: 9vw
+		height: 9vw
 	.cube3d
-		width: 10.36vw
-		height: 10.36vw
-		// transform: rotate3d(-0.5, 1, 1, 90deg) translateZ(100px)
-		// animation: cube3d 10s infinite linear
+		width: 100%
+		height: 100%  
+		transform-style: preserve-3d
+		animation: cube3d 10s infinite linear
 		.side
-			width: 10.36vw
-			height: 10.36vw
+			width: 100%
+			height: 100%
 			position: absolute
-			opacity: .7
-			background: skyblue
+			opacity: .3
+			background: #00C6DC
 		.back 
-			transform: translateZ(-5.18vw) rotateZ(90deg)
+			transform: translateZ(-4.5vw)
 		.left 
-			transform: translateX(-5.18vw) rotateY(90deg)
+			transform: translateX(-4.5vw) rotateY(90deg)
 		.right 
-			transform: translateX(5.18vw) rotateY(90deg)
+			transform: translateX(4.5vw) rotateY(90deg)
 		.top 
-			transform: translateY(-5.18vw) rotateX(90deg)
+			transform: translateY(-4.5vw) rotateX(90deg)
 		.bottom 
-			transform: translateY(5.18vw) rotateX(90deg)
+			transform: translateY(4.5vw) rotateX(90deg)
+		.front
+			transform: translateZ(4.5vw)
+			
+	.cube3d2
+		width: 100%
+		height: 100%  
+		transform-style: preserve-3d
+		animation: cube3d 10s infinite linear
+		.side
+			width: 9vw
+			height: 9vw
+			position: absolute
+			opacity: .3
+			background: #00C6DC
+		.side2
+			width: 5vw
+			height: 5vw
+			position: absolute
+			top: 20%
+			left: 20%
+			opacity: .8
+			background: #00F9E5
+		.back 
+			transform: translateZ(-4.5vw)
+		.left 
+			transform: translateX(-4.5vw) rotateY(90deg)
+		.right 
+			transform: translateX(4.5vw) rotateY(90deg)
+		.top 
+			transform: translateY(-4.5vw) rotateX(90deg)
+		.bottom 
+			transform: translateY(4.5vw) rotateX(90deg)
+		.front
+			transform: translateZ(4.5vw)
+		.back2
+			transform: translateZ(-2.5vw)
+		.left2
+			transform: translateX(-2.5vw) rotateY(90deg)
+		.right2
+			transform: translateX(2.5vw) rotateY(90deg)
+		.top2
+			transform: translateY(-2.5vw) rotateX(90deg)
+		.bottom2
+			transform: translateY(2.5vw) rotateX(90deg)
+		.front2
+			transform: translateZ(2.5vw)
+			
 			
 
 .section3 .left-block
@@ -563,10 +633,14 @@ body
 		transform: translateX(0%)
 	.right-block
 		transform: translateX(0%)
-	.dolphins
-		top: 100% !important
-		transform: rotate(-20deg)
-		animation: dolphins 1.5s 0.7s forwards
+	.dolphin1
+		animation: dolphin1 1.5s 0.7s forwards
+	.dolphin2
+		animation: dolphin2 1.5s 0.7s forwards
+	.dolphin1,
+	.dolphin2
+		bottom: 0% !important
+		transform: translateY(100%) rotate(-20deg)
 		
 	.bubble1
 		width: 24%
@@ -653,14 +727,23 @@ body
 		animation: dots 10s 0.7s linear infinite
 	.samolet
 		animation: samolet 25s 0.7s linear infinite
+	
 		
-@keyframes dolphins
+@keyframes dolphin1
 	0%
-		top: 100%
-		transform: rotate(-20deg)
+		bottom: 0
+		transform: translateY(100%) rotate(-20deg)
 	100%
-		top: 40%
-		transform: rotate(15deg)
+		bottom: 18.8%
+		transform: translateY(0) rotate(15deg)
+		
+@keyframes dolphin2
+	0%
+		bottom: 0
+		transform: translateY(100%) rotate(-20deg)
+	100%
+		bottom: 16.3%
+		transform: translateY(0) rotate(15deg)
 		
 @keyframes cloud1
 	0%
