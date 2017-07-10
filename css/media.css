@@ -28,6 +28,10 @@
 		margin-left: -30px;
 	}
 
+	div.second-slide h1, div.third-slide h1 {
+	  margin-top: 50%;
+	}
+
 }
 
 /* Small Devices, Tablets */
@@ -131,6 +135,45 @@
 		margin-top: 30px;
 	}
 
+/*-------------------------------work-details----------------------------------*/
+	div.work-1.logo {
+	  top: -9rem;
+	  left: -15rem;
+	}
+
+	div.first-slide {
+	  font-size: 36px;
+	}
+
+	div.first-slide p {
+	  margin: 20% 10px;
+	}
+
+	div.first-slide img {
+	  margin-top: -20%;
+	}
+
+	div.second-slide div.left-block-work h1{
+		margin-top: 40%;
+	  font-size: 26px;
+	}
+
+	div.third-slide div.left-block-work h1 {
+		text-align: center;
+		margin-top: 50%;
+	  font-size: 26px;
+	}
+
+	div.second-slide div.left-block-work p {
+		height: 60px;
+		overflow: hidden;
+	}
+
+	div.third-slide div.left-block-work p {
+		height: 60px;
+		overflow: hidden;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -215,7 +258,43 @@
 		font-size: 4rem;
 	}
 
+	/*-------------------------------work-details----------------------------------*/
+	
+	div.work-1.logo {
+	  top: -9rem;
+	  left: -9rem;
+	}
+
+	div.first-slide {
+	  font-size: 36px;
+	}
+
+	div.first-slide p {
+	  margin: 50% 10px;
+	}
+
+	div.first-slide img {
+	  margin-top: 0;
+	}
+
+	div.second-slide, div.third-slide {
+	  display: block;
+	  height: 100vh;
+	}
+
+	div.second-slide div.left-block-work, div.third-slide div.left-block-work {
+	  width: 100%;
+		padding: 2rem 5rem 5rem 5rem;
+	  height: 50vh;
+	}
+
+	div.second-slide div.right-block-work, div.third-slide div.right-block-work {
+	  width: 100%;
+	  height: 50vh;
+	}
 }
+
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
