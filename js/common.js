@@ -116,8 +116,11 @@ $(function() {
 	var cube5 = $('#cube5').get(0);
 	var parallaxCube5 = new Parallax(cube5);
 
-	var keys = $('#keys').get(0);
-	var parallaxKeys = new Parallax(keys);
+	var key1 = $('#key1').get(0);
+	var parallaxKey1 = new Parallax(key1);
+
+	var key2 = $('#key2').get(0);
+	var parallaxKey2 = new Parallax(key2);
 
 	var dolphin1 = $('#dolphin1').get(0);
 	var parallaxDolphin1 = new Parallax(dolphin1);
@@ -136,6 +139,160 @@ $(function() {
 		invertX: false,
 		invertY: false
 	});
+
+	var youtubeLike3 = $('#youtube-like3').get(0);
+	var parallaxYoutubeLike3 = new Parallax(youtubeLike3, {
+		invertX: false
+	});
+
+	var likeButton2 = $('#like-button2').get(0);
+	var parallaxLikeButton2 = new Parallax(likeButton2, {
+		invertY: false
+	});
+
+	var youtubeLike = $('#youtube-like').get(0);
+	var parallaxYoutubeLike = new Parallax(youtubeLike, {
+		invertX: false,
+		invertY: false
+	});
+
+	var cube8 = $('#cube8').get(0);
+	var parallaxCube8 = new Parallax(cube8, {
+		invertX: false
+	});
+
+	var likeButton3 = $('#like-button3').get(0);
+	var parallaxLikeButton3 = new Parallax(likeButton3, {
+		invertY: false
+	});
+
+	var cube2 = $('#cube2').get(0);
+	var parallaxCube2 = new Parallax(cube2, {
+		invertX: false,
+		invertY: false
+	});
+
+	var likeButton = $('#like-button').get(0);
+	var parallaxLikeButton = new Parallax(likeButton, {
+		invertX: false
+	});
+
+	var youtubeLike2 = $('#youtube-like2').get(0);
+	var parallaxYoutubeLike2 = new Parallax(youtubeLike2, {
+		invertY: false
+	});
+
+	var cube1 = $('#cube1').get(0);
+	var parallaxCube1 = new Parallax(cube1, {
+		invertX: false,
+		invertY: false
+	});
+
+	var border = $('#border').get(0);
+	var parallaxBorder = new Parallax(border, {
+		invertY: false
+	});
+
+	$('.section1').mousemove(function(e) {
+		if($(this).hasClass('fp-completely')) {
+			var wind = $(window),
+				x = wind.width()/2,
+				y = wind.height()/2,
+				rotateY = -(e.clientX - x)/x*10,
+				rotateX = (e.clientY - y)/y*10;
+
+			$('.s-img img').css({
+				transform: 'perspective(300px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)',
+				transition: 'none'
+			})
+		}
+	})
+
+	$('.section1').mouseout(function() {
+		$('.s-img img').css({
+			transform: 'perspective(300px)',
+			transition: 'all 0.7s'
+		})
+	})
+
+	$('.section2').mousemove(function(e) {
+		if($(this).hasClass('fp-completely')) {
+			var wind = $(window),
+				x = wind.width()/2,
+				y = wind.height()/2,
+				rotateY = -(e.clientX - x)/x*5,
+				rotateX = (e.clientY - y)/y*5;
+				rotate = (e.clientX - x)/x*10;
+
+			$('.venera img').css({
+				transform: 'rotate(' + rotate + 'deg)',
+				transition: 'none'
+			})
+
+			$('.letter-d img').css({
+				transform: 'perspective(300px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)',
+				transition: 'none'
+			})
+		}
+	})
+
+	$('.section2').mouseout(function() {
+		$('.venera img').css({
+			transform: 'none',
+			transition: 'all 0.7s'
+		})
+
+		$('.letter-d img').css({
+			transform: 'perspective(300px)',
+			transition: 'all 0.7s'
+		})
+	})
+
+
+	$('.section3').mousemove(function(e) {
+		if($(this).hasClass('fp-completely')) {
+			var wind = $(window),
+				x = wind.width()/2,
+				y = wind.height()/2,
+				rotateY = -(e.clientX - x)/x*5,
+				rotateX = (e.clientY - y)/y*5;
+
+			$('.letter-b').css({
+				transform: 'perspective(300px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translate(-50%, 50%)',
+				transition: 'none'
+			})
+		}
+	})
+
+	$('.section3').mouseout(function() {
+		$('.letter-b').css({
+			transform: 'perspective(300px) translate(-50%, 50%)',
+			transition: 'all 0.7s'
+		})
+	})
+
+
+	$('.section4').mousemove(function(e) {
+		if($(this).hasClass('fp-completely')) {
+			var wind = $(window),
+				x = wind.width()/2,
+				y = wind.height()/2,
+				rotateY = -(e.clientX - x)/x*10,
+				rotateX = (e.clientY - y)/y*10;
+
+			$('.letter-c img').css({
+				transform: 'perspective(300px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)',
+				transition: 'none'
+			})
+		}
+	})
+
+	$('.section4').mouseout(function() {
+		$('.letter-c img').css({
+			transform: 'perspective(300px)',
+			transition: 'all 0.7s'
+		})
+	})
 	
 });
 

@@ -258,6 +258,8 @@ body {
   position: relative;
   background: url(../img/section1-bg.jpg) center center no-repeat;
   background-size: cover;
+  perspective-origin: center -50%;
+  perspective: 300px;
 }
 
 .section1 .left-block .bubbles {
@@ -337,10 +339,14 @@ body {
   position: absolute;
   bottom: 3%;
   left: 50%;
-  display: flex;
   width: 0;
   transform: translateX(-50%) rotate(0);
-  transition: all 0s 0.7s;
+}
+
+.section1 .left-block .s-img img {
+  width: 100%;
+  height: auto;
+  transition: all 0.4s;
 }
 
 .section1 .left-block .cube1 {
@@ -350,18 +356,30 @@ body {
   width: 32.5%;
 }
 
+.section1 .left-block .cube1 img {
+  width: 100%;
+}
+
 .section1 .left-block .youtube-like {
-  position: absolute;
-  top: 18%;
-  left: 13.7%;
+  position: absolute !important;
+  top: 18% !important;
+  left: 13.7% !important;
   width: 26%;
+}
+
+.section1 .left-block .youtube-like img {
+  width: 100%;
 }
 
 .section1 .left-block .youtube-like2 {
   position: absolute;
-  bottom: 4.5%;
-  right: 17.4%;
+  bottom: 17.4%;
+  right: 4.5%;
   width: 20%;
+}
+
+.section1 .left-block .youtube-like2 img {
+  width: 100%;
 }
 
 .section1 .left-block .cube2 {
@@ -371,6 +389,10 @@ body {
   width: 19%;
 }
 
+.section1 .left-block .cube2 img {
+  width: 100%;
+}
+
 .section1 .left-block .like-button {
   position: absolute;
   bottom: 2%;
@@ -378,12 +400,16 @@ body {
   width: 30.9%;
 }
 
+.section1 .left-block .like-button img {
+  width: 100%;
+}
+
 .section1 .left-block .dolphin1 {
   position: absolute !important;
   bottom: 18.8% !important;
   left: 36.9% !important;
   width: 41.2%;
-  transform: translateY(0) rotate(15deg);
+  transform: translateY(0) rotate(15deg) !important;
 }
 
 .section1 .left-block .dolphin1 img {
@@ -395,10 +421,55 @@ body {
   bottom: 16.3% !important;
   left: 27.9% !important;
   width: 54.7%;
-  transform: translateY(0) rotate(15deg);
+  transform: translateY(0) rotate(15deg) !important;
 }
 
 .section1 .left-block .dolphin2 img {
+  width: 100%;
+}
+
+.section1 .left-block .youtube-like3 {
+  position: absolute !important;
+  top: 8.1% !important;
+  left: 48.2% !important;
+  width: 14%;
+}
+
+.section1 .left-block .youtube-like3 img {
+  width: 100%;
+}
+
+.section1 .left-block .like-button2 {
+  position: absolute !important;
+  top: 16.1% !important;
+  left: auto !important;
+  right: 14%;
+  width: 20%;
+}
+
+.section1 .left-block .like-button2 img {
+  width: 100%;
+}
+
+.section1 .left-block .cube8 {
+  position: absolute !important;
+  top: 25.2% !important;
+  left: 9.7% !important;
+  width: 25.8%;
+}
+
+.section1 .left-block .cube8 img {
+  width: 100%;
+}
+
+.section1 .left-block .like-button3 {
+  position: absolute !important;
+  bottom: 37.2%;
+  left: 5.7% !important;
+  width: 17.6%;
+}
+
+.section1 .left-block .like-button3 img {
   width: 100%;
 }
 
@@ -421,6 +492,10 @@ body {
   transition: all 0s 0.7s;
 }
 
+.section2 .left-block .letter-d img {
+  width: 100%;
+}
+
 .section2 .left-block .cloud1 {
   position: absolute;
   left: -20px;
@@ -430,11 +505,16 @@ body {
 
 .section2 .left-block .venera {
   position: absolute;
-  bottom: 0;
+  bottom: -15px;
   left: 50%;
   width: 50%;
   transform: translate(-50%, 100%);
   transition: all 0s 0.7s;
+}
+
+.section2 .left-block .venera img {
+  width: 100%;
+  transform-origin: 50% 100%;
 }
 
 .section2 .left-block .cloud {
@@ -613,6 +693,17 @@ body {
   transform: translateZ(2.5vw);
 }
 
+.section2 .left-block .border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61%;
+}
+
+.section2 .left-block .border img {
+  width: 100%;
+}
+
 .section3 .left-block {
   position: relative;
   background: #545FFF;
@@ -631,10 +722,10 @@ body {
 .section3 .left-block .camera2 {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -35%;
   width: 35%;
-  transform: translate(-100%, 100%);
-  transition: all 0s 0.7s;
+  transform-origin: 0 100%;
+  animation: camera2 30s 1.7s linear infinite;
 }
 
 .section3 .left-block .letter-b {
@@ -689,6 +780,10 @@ body {
   width: 21%;
 }
 
+.section3 .left-block .key1 img {
+  width: 100%;
+}
+
 .section3 .left-block .key2 {
   position: absolute !important;
   top: auto !important;
@@ -696,6 +791,10 @@ body {
   right: 1%;
   bottom: 1%;
   width: 41%;
+}
+
+.section3 .left-block .key2 img {
+  width: 100%;
 }
 
 .section4 .left-block {
@@ -747,6 +846,10 @@ body {
   transform: perspective(800px) rotate3d(1, 0, 0, 90deg);
   transform-style: preserve-3d;
   transition: all 0s 0.7s;
+}
+
+.section4 .left-block .letter-c img {
+  width: 100%;
 }
 
 .section4 .left-block .zhuravel1,
@@ -901,11 +1004,6 @@ body {
   transform-origin: 95% 0;
   transform-style: preserve-3d;
   animation: camera1 7s 1.7s linear infinite;
-}
-
-.section.active .camera2 {
-  transform: translate(0, 0);
-  transition: all 1.4s 0.7s;
 }
 
 .section.active .letter-b {
@@ -1071,11 +1169,87 @@ body {
   0% {
     transform: perspective(800px) rotate3d(0, 1, 0, 1deg);
   }
+  25% {
+    transform: perspective(800px) rotate3d(0, 1, 0, -20deg);
+  }
   50% {
-    transform: perspective(800px) rotate3d(0, 1, 0, 30deg);
+    transform: perspective(800px) rotate3d(0, 1, 0, 0deg);
+  }
+  75% {
+    transform: perspective(800px) rotate3d(0, 1, 0, 20deg);
   }
   100% {
     transform: perspective(800px) rotate3d(0, 1, 0, 1deg);
+  }
+}
+
+@keyframes camera2 {
+  0% {
+    left: -35%;
+    bottom: 0;
+    transform: rotate(0);
+  }
+  5% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  35% {
+    left: -35%;
+    opacity: 1;
+    bottom: 0;
+  }
+  35.1% {
+    left: -35%;
+    opacity: 0;
+    transform: rotate(0);
+  }
+  35.2% {
+    left: 0;
+    top: auto;
+    bottom: 135%;
+    transform: rotate(90deg);
+  }
+  35.3% {
+    opacity: 1;
+    bottom: 135%;
+  }
+  42.3% {
+    bottom: 100%;
+  }
+  68% {
+    bottom: 100%;
+  }
+  75% {
+    bottom: 135%;
+    transform: rotate(90deg) rotateY(0);
+    opacity: 1;
+  }
+  75.1% {
+    bottom: 135%;
+    left: 0;
+    opacity: 0;
+    transform: rotate(0) rotateY(180deg);
+  }
+  75.2% {
+    bottom: 0;
+    left: 135%;
+    opacity: 0;
+  }
+  75.3% {
+    left: 135%;
+    opacity: 1;
+  }
+  80% {
+    left: 100%;
+  }
+  95% {
+    left: 100%;
+  }
+  100% {
+    left: 135%;
+    transform: rotate(0) rotateY(180deg);
   }
 }
 
