@@ -222,6 +222,8 @@ body
 	position: relative
 	background: url(../img/section1-bg.jpg) center center no-repeat
 	background-size: cover 
+	perspective-origin: center -50%
+	perspective: 300px
 	.bubbles
 		position: absolute !important
 		left: 0
@@ -277,41 +279,53 @@ body
 		position: absolute
 		bottom: 3%
 		left: 50%
-		display: flex
 		width: 0
 		transform: translateX(-50%) rotate(0)
-		transition: all 0s 0.7s
+		img
+			width: 100% 
+			height: auto
+			transition: all 0.4s
 	.cube1
 		position: absolute
 		bottom: 1%
 		left: 2%
 		width: 32.5%
+		img
+			width: 100% 
 	.youtube-like
-		position: absolute
-		top: 18%
-		left: 13.7%
+		position: absolute !important
+		top: 18% !important
+		left: 13.7% !important
 		width: 26%
+		img
+			width: 100% 
 	.youtube-like2
 		position: absolute
-		bottom: 4.5%
-		right: 17.4%
+		bottom: 17.4%
+		right: 4.5%
 		width: 20%
+		img
+			width: 100% 
 	.cube2
 		position: absolute
 		right: 4.2%
 		bottom: 32%
 		width: 19%
+		img
+			width: 100% 
 	.like-button
 		position: absolute
 		bottom: 2%
 		right: 24.4%
 		width: 30.9%
+		img
+			width: 100% 
 	.dolphin1
 		position: absolute !important
 		bottom: 18.8% !important
 		left: 36.9% !important
 		width: 41.2%
-		transform: translateY(0) rotate(15deg)
+		transform: translateY(0) rotate(15deg) !important
 		img
 			width: 100% 
 	.dolphin2
@@ -319,7 +333,37 @@ body
 		bottom: 16.3% !important
 		left: 27.9% !important
 		width: 54.7%
-		transform: translateY(0) rotate(15deg)
+		transform: translateY(0) rotate(15deg) !important
+		img
+			width: 100% 
+	.youtube-like3
+		position: absolute !important
+		top: 8.1% !important
+		left: 48.2% !important
+		width: 14%
+		img
+			width: 100% 
+	.like-button2
+		position: absolute !important
+		top: 16.1% !important
+		left: auto !important
+		right: 14%
+		width: 20%
+		img
+			width: 100% 
+	.cube8
+		position: absolute !important
+		top: 25.2% !important
+		left: 9.7% !important
+		width: 25.8%
+		img
+			width: 100% 
+	.like-button3
+		position: absolute !important
+		// top: auto !important
+		bottom: 37.2%
+		left: 5.7% !important
+		width: 17.6%
 		img
 			width: 100% 
 	
@@ -339,6 +383,8 @@ body
 		transform: translateX(-50%) perspective(800px)  rotate3d(0, 1, 0, 90deg)
 		transform-style: preserve-3d
 		transition: all 0s 0.7s
+		img
+			width: 100% 
 	.cloud1
 		position: absolute
 		left: -20px
@@ -346,11 +392,14 @@ body
 		width: calc(100% + 40px)
 	.venera
 		position: absolute
-		bottom: 0
+		bottom: -15px
 		left: 50%
 		width: 50% 
 		transform: translate(-50%, 100%)
 		transition: all 0s 0.7s
+		img
+			width: 100% 
+			transform-origin: 50% 100%
 	.cloud
 		position: absolute
 		left: -20px
@@ -467,6 +516,14 @@ body
 		.front2
 			transform: translateZ(2.5vw)
 			
+	.border
+		position: absolute
+		top: 0
+		left: 0
+		width: 61%
+		img
+			width: 100% 
+			
 			
 
 .section3 .left-block
@@ -483,10 +540,10 @@ body
 	.camera2
 		position: absolute
 		bottom: 0
-		left: 0
+		left: -35%
 		width: 35%
-		transform: translate(-100%, 100%)
-		transition: all 0s 0.7s
+		transform-origin: 0 100%
+		animation: camera2 30s 1.7s linear infinite
 	.letter-b
 		position: absolute
 		left: 55%
@@ -525,6 +582,8 @@ body
 		top: 23% !important
 		left: 8.5% !important
 		width: 21%
+		img
+			width: 100% 
 	.key2
 		position: absolute !important
 		top: auto !important
@@ -532,6 +591,8 @@ body
 		right: 1%
 		bottom: 1%
 		width: 41%
+		img
+			width: 100% 
 		
 .section4 .left-block
 	position: relative
@@ -571,6 +632,8 @@ body
 		transform: perspective(800px)  rotate3d(1, 0, 0, 90deg)
 		transform-style: preserve-3d
 		transition: all 0s 0.7s
+		img
+			width: 100% 
 	.zhuravel1,
 	.zhuravel2
 		position: absolute
@@ -676,9 +739,6 @@ body
 		transform-origin: 95% 0
 		transform-style: preserve-3d
 		animation: camera1 7s 1.7s linear infinite
-	.camera2
-		transform: translate(0, 0)
-		transition: all 1.4s 0.7s
 	.letter-b
 		width: 68%
 		transition: all 1.4s 0.7s
@@ -782,12 +842,66 @@ body
 @keyframes camera1
 	0%
 		transform: perspective(800px)  rotate3d(0, 1, 0, 1deg)
-	// 25%
-	// 	transform: perspective(800px)  rotate3d(0, 1, 0, -20deg)
+	25%
+		transform: perspective(800px)  rotate3d(0, 1, 0, -20deg)
 	50%
-		transform: perspective(800px)  rotate3d(0, 1, 0, 30deg)
+		transform: perspective(800px)  rotate3d(0, 1, 0, 0deg)
+	75%
+		transform: perspective(800px)  rotate3d(0, 1, 0, 20deg)
 	100%
 		transform: perspective(800px)  rotate3d(0, 1, 0, 1deg)
+@keyframes camera2
+	0%
+		left: -35%
+		bottom: 0
+		transform: rotate(0)
+	5%
+		left: 0
+	30%
+		left: 0
+	35%
+		left: -35%
+		opacity: 1
+		bottom: 0
+	35.1%
+		left: -35%
+		opacity: 0
+		transform: rotate(0)
+	35.2%
+		left: 0
+		top: auto
+		bottom: 135% 
+		transform: rotate(90deg)
+	35.3%
+		opacity: 1
+		bottom: 135%
+	42.3%
+		bottom: 100%
+	68%
+		bottom: 100%
+	75%
+		bottom: 135%
+		transform: rotate(90deg) rotateY(0)
+		opacity: 1
+	75.1%
+		bottom: 135%
+		left: 0
+		opacity: 0
+		transform: rotate(0) rotateY(180deg)
+	75.2%
+		bottom: 0
+		left: 135%
+		opacity: 0
+	75.3%
+		left: 135%
+		opacity: 1
+	80%
+		left: 100%
+	95%
+		left: 100%
+	100%
+		left: 135%
+		transform: rotate(0) rotateY(180deg)
 @keyframes paper1
 	0%
 		transform: translate(0, 0)
