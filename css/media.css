@@ -21,7 +21,7 @@
 	}
 
 	p.base-title {
-		font-size: 5rem;
+		font-size: 4rem;
 	}
 
 	div#fp-nav {
@@ -31,6 +31,11 @@
 	div.second-slide h1, div.third-slide h1 {
 	  margin-top: 50%;
 	}
+
+	a.our-work > img {
+	  margin-top: -80px;
+	}
+
 
 }
 
@@ -154,13 +159,13 @@
 	}
 
 	div.second-slide div.left-block-work h1{
-		margin-top: 40%;
+		margin-top: 30%;
 	  font-size: 26px;
 	}
 
 	div.third-slide div.left-block-work h1 {
 		text-align: center;
-		margin-top: 50%;
+		margin-top: 40%;
 	  font-size: 26px;
 	}
 
@@ -172,6 +177,73 @@
 	div.third-slide div.left-block-work p {
 		height: 60px;
 		overflow: hidden;
+	}
+
+	nav.mobile-menu {
+		display: block;
+		height: 50px;
+		text-align: left;
+		position: relative;
+	}
+
+	nav.mobile-menu>i {
+		font-size: 3rem;
+		padding: 10px 0 0 10px;
+	}
+
+	div.mobile-list {
+		position: absolute;
+		top: -300px;
+		left: 0;
+		border: 1px solid blue;
+		z-index: 101;
+		width: 100%;
+		background: #66ccff;
+		transition: all 1s;
+
+	}
+
+	.visible {
+		top: 50px !important;
+	}
+
+	div.mobile-list a {
+		display: block;
+		font-size: 2rem;
+		text-decoration: none;
+		color: #000;
+		text-align: left;
+		padding: 10px;
+		border: 1px solid blue;
+	}
+
+	nav.menu {
+		display: none;
+	}
+
+	div.button-back-small-screen {
+		display: block;
+		position: fixed;
+		right: 1.5rem;
+		top: 3rem;
+		z-index: 1;
+		transform: scale(1.2,1.2);
+	}
+
+	div.work-1.button-back {
+		display: none;
+	}
+
+	div.second-slide, div.third-slide {
+	  margin-left: 0;
+	}
+
+	.title-work {
+	  top: 30%;
+	}
+
+	a.our-work > img {
+	  margin-top: -25px;
 	}
 
 }
@@ -203,8 +275,8 @@
 		margin-bottom: 15px;
 	}
 
-	section.section1 .right-block {
-		background: #c4f185;
+	/*section.section1 .right-block {
+		background: #96deff;
 	}
 
 	section.section2 .right-block {
@@ -212,12 +284,12 @@
 	}
 
 	section.section3 .right-block {
-		background: #545fff;
+		background: #c4f185;
 	}
 
 	section.section4 .right-block {
-		background: #96deff;
-	}
+		background: #545fff;
+	}*/
 
 	.s-row .btn-blue {
 		width: calc(100% - 40px);
@@ -258,8 +330,12 @@
 		font-size: 4rem;
 	}
 
+	.title-work {
+	  top: 40%;
+	}
+
 	/*-------------------------------work-details----------------------------------*/
-	
+
 	div.work-1.logo {
 	  top: -9rem;
 	  left: -9rem;
@@ -291,6 +367,10 @@
 	div.second-slide div.right-block-work, div.third-slide div.right-block-work {
 	  width: 100%;
 	  height: 50vh;
+	}
+
+	a.our-work > img {
+	  margin-top: -45px;
 	}
 }
 

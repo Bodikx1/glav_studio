@@ -256,232 +256,14 @@ body {
 
 .section1 .left-block {
   position: relative;
-  background: url(../img/section1-bg.jpg) center center no-repeat;
-  background-size: cover;
-  perspective-origin: center -50%;
-  perspective: 300px;
-}
-
-.section1 .left-block .bubbles {
-  position: absolute !important;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.section1 .left-block .bubble1 {
-  position: absolute !important;
-  left: 0 !important;
-  bottom: 25% !important;
-  top: auto  !important;
-  width: 0;
-  transition: width 0.7s;
-}
-
-.section1 .left-block .bubble3 {
-  position: absolute;
-  left: 3% !important;
-  top: 1% !important;
-  width: 60px;
-  width: 0;
-  transition: width 0.7s;
-}
-
-.section1 .left-block .bubble4 {
-  position: absolute !important;
-  left: auto !important;
-  right: 4%;
-  top: 25.5%  !important;
-  width: 0;
-  transition: width 0.7s;
-}
-
-.section1 .left-block .bubble {
-  position: absolute !important;
-  width: 0;
-  transition: width 0.7s;
-}
-
-.section1 .left-block .bubble2 {
-  left: 6% !important;
-  bottom: 21% !important;
-  top: auto !important;
-}
-
-.section1 .left-block .bubble5 {
-  left: 20.9% !important;
-  top: 2.5% !important;
-}
-
-.section1 .left-block .bubble6 {
-  left: 12% !important;
-  top: 11.9% !important;
-}
-
-.section1 .left-block .bubble7 {
-  left: 16.4% !important;
-  top: 15.9% !important;
-}
-
-.section1 .left-block .bubble8 {
-  left: 18.4% !important;
-  top: 9.8% !important;
-}
-
-.section1 .left-block .bubble9 {
-  left: auto !important;
-  right: 7.8%;
-  top: 36.2% !important;
-}
-
-.section1 .left-block .s-img {
-  position: absolute;
-  bottom: 3%;
-  left: 50%;
-  width: 0;
-  transform: translateX(-50%) rotate(0);
-}
-
-.section1 .left-block .s-img img {
-  width: 100%;
-  height: auto;
-  transition: all 0.4s;
-}
-
-.section1 .left-block .cube1 {
-  position: absolute;
-  bottom: 1%;
-  left: 2%;
-  width: 32.5%;
-}
-
-.section1 .left-block .cube1 img {
-  width: 100%;
-}
-
-.section1 .left-block .youtube-like {
-  position: absolute !important;
-  top: 18% !important;
-  left: 13.7% !important;
-  width: 26%;
-}
-
-.section1 .left-block .youtube-like img {
-  width: 100%;
-}
-
-.section1 .left-block .youtube-like2 {
-  position: absolute;
-  bottom: 17.4%;
-  right: 4.5%;
-  width: 20%;
-}
-
-.section1 .left-block .youtube-like2 img {
-  width: 100%;
-}
-
-.section1 .left-block .cube2 {
-  position: absolute;
-  right: 4.2%;
-  bottom: 32%;
-  width: 19%;
-}
-
-.section1 .left-block .cube2 img {
-  width: 100%;
-}
-
-.section1 .left-block .like-button {
-  position: absolute;
-  bottom: 2%;
-  right: 24.4%;
-  width: 30.9%;
-}
-
-.section1 .left-block .like-button img {
-  width: 100%;
-}
-
-.section1 .left-block .dolphin1 {
-  position: absolute !important;
-  bottom: 18.8% !important;
-  left: 36.9% !important;
-  width: 41.2%;
-  transform: translateY(0) rotate(15deg) !important;
-}
-
-.section1 .left-block .dolphin1 img {
-  width: 100%;
-}
-
-.section1 .left-block .dolphin2 {
-  position: absolute !important;
-  bottom: 16.3% !important;
-  left: 27.9% !important;
-  width: 54.7%;
-  transform: translateY(0) rotate(15deg) !important;
-}
-
-.section1 .left-block .dolphin2 img {
-  width: 100%;
-}
-
-.section1 .left-block .youtube-like3 {
-  position: absolute !important;
-  top: 8.1% !important;
-  left: 48.2% !important;
-  width: 14%;
-}
-
-.section1 .left-block .youtube-like3 img {
-  width: 100%;
-}
-
-.section1 .left-block .like-button2 {
-  position: absolute !important;
-  top: 16.1% !important;
-  left: auto !important;
-  right: 14%;
-  width: 20%;
-}
-
-.section1 .left-block .like-button2 img {
-  width: 100%;
-}
-
-.section1 .left-block .cube8 {
-  position: absolute !important;
-  top: 25.2% !important;
-  left: 9.7% !important;
-  width: 25.8%;
-}
-
-.section1 .left-block .cube8 img {
-  width: 100%;
-}
-
-.section1 .left-block .like-button3 {
-  position: absolute !important;
-  bottom: 37.2%;
-  left: 5.7% !important;
-  width: 17.6%;
-}
-
-.section1 .left-block .like-button3 img {
-  width: 100%;
-}
-
-.section2 .left-block {
-  position: relative;
+  z-index: 1;
   background: url(../img/section2-bg.jpg) center center no-repeat;
   background-size: cover;
   perspective-origin: center -50%;
   perspective: 2000px;
 }
 
-.section2 .left-block .letter-d {
+.section1 .left-block .letter-d {
   position: absolute;
   left: 50%;
   bottom: 8.8%;
@@ -492,18 +274,18 @@ body {
   transition: all 0s 0.7s;
 }
 
-.section2 .left-block .letter-d img {
+.section1 .left-block .letter-d img {
   width: 100%;
 }
 
-.section2 .left-block .cloud1 {
+.section1 .left-block .cloud1 {
   position: absolute;
   left: -20px;
   top: 0;
   width: calc(100% + 40px);
 }
 
-.section2 .left-block .venera {
+.section1 .left-block .venera {
   position: absolute;
   bottom: -15px;
   left: 50%;
@@ -512,26 +294,26 @@ body {
   transition: all 0s 0.7s;
 }
 
-.section2 .left-block .venera img {
+.section1 .left-block .venera img {
   width: 100%;
   transform-origin: 50% 100%;
 }
 
-.section2 .left-block .cloud {
+.section1 .left-block .cloud {
   position: absolute;
   left: -20px;
   bottom: 0;
   width: 85%;
 }
 
-.section2 .left-block .cloud2 {
+.section1 .left-block .cloud2 {
   position: absolute;
   right: 0;
   top: 0;
   width: 73%;
 }
 
-.section2 .left-block .cubes {
+.section1 .left-block .cubes {
   position: absolute !important;
   top: 0;
   right: 0;
@@ -539,7 +321,7 @@ body {
   left: 0;
 }
 
-.section2 .left-block .cube3 {
+.section1 .left-block .cube3 {
   position: absolute !important;
   left: 3% !important;
   top: auto !important;
@@ -547,7 +329,7 @@ body {
   width: 38%;
 }
 
-.section2 .left-block .cube4 {
+.section1 .left-block .cube4 {
   position: absolute !important;
   width: 26%;
   left: auto !important;
@@ -556,7 +338,7 @@ body {
   bottom: 5% !important;
 }
 
-.section2 .left-block .cube5 {
+.section1 .left-block .cube5 {
   position: absolute !important;
   top: 45% !important;
   right: 8% !important;
@@ -564,7 +346,7 @@ body {
   width: 23%;
 }
 
-.section2 .left-block .cube6 {
+.section1 .left-block .cube6 {
   position: absolute !important;
   top: 30% !important;
   right: 15%;
@@ -573,7 +355,7 @@ body {
   height: 9vw;
 }
 
-.section2 .left-block .cube7 {
+.section1 .left-block .cube7 {
   position: absolute !important;
   top: 20% !important;
   left: 15% !important;
@@ -581,14 +363,14 @@ body {
   height: 9vw;
 }
 
-.section2 .left-block .cube3d {
+.section1 .left-block .cube3d {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   animation: cube3d 10s infinite linear;
 }
 
-.section2 .left-block .cube3d .side {
+.section1 .left-block .cube3d .side {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -596,38 +378,38 @@ body {
   background: #00C6DC;
 }
 
-.section2 .left-block .cube3d .back {
+.section1 .left-block .cube3d .back {
   transform: translateZ(-4.5vw);
 }
 
-.section2 .left-block .cube3d .left {
+.section1 .left-block .cube3d .left {
   transform: translateX(-4.5vw) rotateY(90deg);
 }
 
-.section2 .left-block .cube3d .right {
+.section1 .left-block .cube3d .right {
   transform: translateX(4.5vw) rotateY(90deg);
 }
 
-.section2 .left-block .cube3d .top {
+.section1 .left-block .cube3d .top {
   transform: translateY(-4.5vw) rotateX(90deg);
 }
 
-.section2 .left-block .cube3d .bottom {
+.section1 .left-block .cube3d .bottom {
   transform: translateY(4.5vw) rotateX(90deg);
 }
 
-.section2 .left-block .cube3d .front {
+.section1 .left-block .cube3d .front {
   transform: translateZ(4.5vw);
 }
 
-.section2 .left-block .cube3d2 {
+.section1 .left-block .cube3d2 {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   animation: cube3d 10s infinite linear;
 }
 
-.section2 .left-block .cube3d2 .side {
+.section1 .left-block .cube3d2 .side {
   width: 9vw;
   height: 9vw;
   position: absolute;
@@ -635,7 +417,7 @@ body {
   background: #00C6DC;
 }
 
-.section2 .left-block .cube3d2 .side2 {
+.section1 .left-block .cube3d2 .side2 {
   width: 5vw;
   height: 5vw;
   position: absolute;
@@ -645,199 +427,107 @@ body {
   background: #00F9E5;
 }
 
-.section2 .left-block .cube3d2 .back {
+.section1 .left-block .cube3d2 .back {
   transform: translateZ(-4.5vw);
 }
 
-.section2 .left-block .cube3d2 .left {
+.section1 .left-block .cube3d2 .left {
   transform: translateX(-4.5vw) rotateY(90deg);
 }
 
-.section2 .left-block .cube3d2 .right {
+.section1 .left-block .cube3d2 .right {
   transform: translateX(4.5vw) rotateY(90deg);
 }
 
-.section2 .left-block .cube3d2 .top {
+.section1 .left-block .cube3d2 .top {
   transform: translateY(-4.5vw) rotateX(90deg);
 }
 
-.section2 .left-block .cube3d2 .bottom {
+.section1 .left-block .cube3d2 .bottom {
   transform: translateY(4.5vw) rotateX(90deg);
 }
 
-.section2 .left-block .cube3d2 .front {
+.section1 .left-block .cube3d2 .front {
   transform: translateZ(4.5vw);
 }
 
-.section2 .left-block .cube3d2 .back2 {
+.section1 .left-block .cube3d2 .back2 {
   transform: translateZ(-2.5vw);
 }
 
-.section2 .left-block .cube3d2 .left2 {
+.section1 .left-block .cube3d2 .left2 {
   transform: translateX(-2.5vw) rotateY(90deg);
 }
 
-.section2 .left-block .cube3d2 .right2 {
+.section1 .left-block .cube3d2 .right2 {
   transform: translateX(2.5vw) rotateY(90deg);
 }
 
-.section2 .left-block .cube3d2 .top2 {
+.section1 .left-block .cube3d2 .top2 {
   transform: translateY(-2.5vw) rotateX(90deg);
 }
 
-.section2 .left-block .cube3d2 .bottom2 {
+.section1 .left-block .cube3d2 .bottom2 {
   transform: translateY(2.5vw) rotateX(90deg);
 }
 
-.section2 .left-block .cube3d2 .front2 {
+.section1 .left-block .cube3d2 .front2 {
   transform: translateZ(2.5vw);
 }
 
-.section2 .left-block .border {
+.section1 .left-block .border {
   position: absolute;
   top: 0;
   left: 0;
   width: 61%;
 }
 
-.section2 .left-block .border img {
+.section1 .left-block .border img {
   width: 100%;
 }
 
-.section3 .left-block {
+.section2 .left-block {
   position: relative;
-  background: #545FFF;
-  background-size: cover;
-}
-
-.section3 .left-block .camera1 {
-  position: absolute;
-  top: 0;
-  right: 5%;
-  width: 35%;
-  transform: translateY(-100%);
-  transition: all 0s 0.7s;
-}
-
-.section3 .left-block .camera2 {
-  position: absolute;
-  bottom: 0;
-  left: -35%;
-  width: 35%;
-  transform-origin: 0 100%;
-  animation: camera2 30s 1.7s linear infinite;
-}
-
-.section3 .left-block .letter-b {
-  position: absolute;
-  left: 55%;
-  bottom: 46%;
-  width: 0;
-  transform: translate(-50%, 50%);
-  transition: all 0s 0.7s;
-}
-
-.section3 .left-block .letter-b img {
-  width: 100%;
-}
-
-.section3 .left-block .letter-b .padlock {
-  position: absolute;
-  left: 14%;
-  bottom: 12%;
-  width: 68%;
-  transform-origin: 50% 50%;
-  transform: perspective(600px) translateZ(800px);
-  transform-style: preserve-3d;
-  transition: all 0s 0.7s;
-}
-
-.section3 .left-block .paper1 {
-  position: absolute;
-  top: 0;
-  left: 1.5%;
-  width: 41%;
-}
-
-.section3 .left-block .paper2 {
-  position: absolute;
-  left: 0;
-  bottom: 23%;
-  width: 41%;
-}
-
-.section3 .left-block .paper3 {
-  position: absolute;
-  right: 0;
-  bottom: 6%;
-  width: 41%;
-}
-
-.section3 .left-block .key1 {
-  position: absolute !important;
-  top: 23% !important;
-  left: 8.5% !important;
-  width: 21%;
-}
-
-.section3 .left-block .key1 img {
-  width: 100%;
-}
-
-.section3 .left-block .key2 {
-  position: absolute !important;
-  top: auto !important;
-  left: auto !important;
-  right: 1%;
-  bottom: 1%;
-  width: 41%;
-}
-
-.section3 .left-block .key2 img {
-  width: 100%;
-}
-
-.section4 .left-block {
-  position: relative;
+  z-index: 1;
   background: #96deff;
 }
 
-.section4 .left-block .cloud3 {
+.section2 .left-block .cloud3 {
   position: absolute;
   right: 0;
   top: 0;
   width: 82%;
 }
 
-.section4 .left-block .cloud4 {
+.section2 .left-block .cloud4 {
   position: absolute;
   left: 0;
   top: 9%;
   width: 68%;
 }
 
-.section4 .left-block .cloud5 {
+.section2 .left-block .cloud5 {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 75.8%;
 }
 
-.section4 .left-block .balloon {
+.section2 .left-block .balloon {
   position: absolute;
   left: 65%;
   top: 11%;
   width: 30%;
 }
 
-.section4 .left-block .balloon2 {
+.section2 .left-block .balloon2 {
   position: absolute;
   left: 10%;
   top: 8%;
   width: 14%;
 }
 
-.section4 .left-block .letter-c {
+.section2 .left-block .letter-c {
   position: absolute;
   width: 66%;
   bottom: 20%;
@@ -848,43 +538,43 @@ body {
   transition: all 0s 0.7s;
 }
 
-.section4 .left-block .letter-c img {
+.section2 .left-block .letter-c img {
   width: 100%;
 }
 
-.section4 .left-block .zhuravel1,
-.section4 .left-block .zhuravel2 {
+.section2 .left-block .zhuravel1,
+.section2 .left-block .zhuravel2 {
   position: absolute;
   width: 33%;
 }
 
-.section4 .left-block .zhuravel1 {
+.section2 .left-block .zhuravel1 {
   top: 36%;
   left: -33%;
 }
 
-.section4 .left-block .zhuravel2 {
+.section2 .left-block .zhuravel2 {
   left: 62%;
   top: 55%;
 }
 
-.section4 .left-block .zhuravel3,
-.section4 .left-block .zhuravel4 {
+.section2 .left-block .zhuravel3,
+.section2 .left-block .zhuravel4 {
   position: absolute;
   width: 22%;
 }
 
-.section4 .left-block .zhuravel3 {
+.section2 .left-block .zhuravel3 {
   bottom: 26%;
   left: 12%;
 }
 
-.section4 .left-block .zhuravel4 {
+.section2 .left-block .zhuravel4 {
   left: 50.35%;
   top: 40%;
 }
 
-.section4 .left-block .hand {
+.section2 .left-block .hand {
   position: absolute;
   width: 83.6%;
   bottom: 0;
@@ -892,7 +582,7 @@ body {
   transform: translateY(100%);
 }
 
-.section4 .left-block .techniks {
+.section2 .left-block .techniks {
   position: absolute;
   left: 52%;
   bottom: 10.6%;
@@ -902,7 +592,7 @@ body {
   opacity: 0;
 }
 
-.section4 .left-block .dots {
+.section2 .left-block .dots {
   position: absolute;
   left: 54%;
   bottom: 9.6%;
@@ -912,11 +602,324 @@ body {
   opacity: 0;
 }
 
-.section4 .left-block .samolet {
+.section2 .left-block .samolet {
   position: absolute;
   left: 45%;
   bottom: 24%;
   width: 0;
+}
+
+.section3 .left-block {
+  position: relative;
+  z-index: 1;
+  background: url(../img/section1-bg.jpg) center center no-repeat;
+  background-size: cover;
+  perspective-origin: center -50%;
+  perspective: 300px;
+}
+
+.section3 .left-block .bubbles {
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.section3 .left-block .bubble1 {
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 25% !important;
+  top: auto  !important;
+  width: 0;
+  transition: width 0.7s;
+}
+
+.section3 .left-block .bubble3 {
+  position: absolute;
+  left: 3% !important;
+  top: 1% !important;
+  width: 0;
+  transition: width 0.7s;
+}
+
+.section3 .left-block .bubble4 {
+  position: absolute !important;
+  left: auto !important;
+  right: 4%;
+  top: 25.5%  !important;
+  width: 0;
+  transition: width 0.7s;
+}
+
+.section3 .left-block .bubble {
+  position: absolute !important;
+  width: 0;
+  transition: width 0.7s;
+}
+
+.section3 .left-block .bubble2 {
+  left: 6% !important;
+  bottom: 21% !important;
+  top: auto !important;
+}
+
+.section3 .left-block .bubble5 {
+  left: 20.9% !important;
+  top: 2.5% !important;
+}
+
+.section3 .left-block .bubble6 {
+  left: 12% !important;
+  top: 11.9% !important;
+}
+
+.section3 .left-block .bubble7 {
+  left: 16.4% !important;
+  top: 15.9% !important;
+}
+
+.section3 .left-block .bubble8 {
+  left: 18.4% !important;
+  top: 9.8% !important;
+}
+
+.section3 .left-block .bubble9 {
+  left: auto !important;
+  right: 7.8%;
+  top: 36.2% !important;
+}
+
+.section3 .left-block .s-img {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  width: 0;
+  transform: translateX(-50%) rotate(0);
+}
+
+.section3 .left-block .s-img img {
+  width: 100%;
+  height: auto;
+  transition: all 0.4s;
+}
+
+.section3 .left-block .cube1 {
+  position: absolute;
+  bottom: 1%;
+  left: 2%;
+  width: 32.5%;
+}
+
+.section3 .left-block .cube1 img {
+  width: 100%;
+}
+
+.section3 .left-block .youtube-like {
+  position: absolute !important;
+  top: 18% !important;
+  left: 13.7% !important;
+  width: 26%;
+}
+
+.section3 .left-block .youtube-like img {
+  width: 100%;
+}
+
+.section3 .left-block .youtube-like2 {
+  position: absolute;
+  bottom: 17.4%;
+  right: 4.5%;
+  width: 20%;
+}
+
+.section3 .left-block .youtube-like2 img {
+  width: 100%;
+}
+
+.section3 .left-block .cube2 {
+  position: absolute;
+  right: 4.2%;
+  bottom: 32%;
+  width: 19%;
+}
+
+.section3 .left-block .cube2 img {
+  width: 100%;
+}
+
+.section3 .left-block .like-button {
+  position: absolute;
+  bottom: 2%;
+  right: 24.4%;
+  width: 30.9%;
+}
+
+.section3 .left-block .like-button img {
+  width: 100%;
+}
+
+.section3 .left-block .dolphin1 {
+  position: absolute !important;
+  bottom: 18.8% !important;
+  left: 36.9% !important;
+  width: 41.2%;
+  transform: translateY(0) rotate(15deg) !important;
+}
+
+.section3 .left-block .dolphin1 img {
+  width: 100%;
+}
+
+.section3 .left-block .dolphin2 {
+  position: absolute !important;
+  bottom: 16.3% !important;
+  left: 27.9% !important;
+  width: 54.7%;
+  transform: translateY(0) rotate(15deg) !important;
+}
+
+.section3 .left-block .dolphin2 img {
+  width: 100%;
+}
+
+.section3 .left-block .youtube-like3 {
+  position: absolute !important;
+  top: 8.1% !important;
+  left: 48.2% !important;
+  width: 14%;
+}
+
+.section3 .left-block .youtube-like3 img {
+  width: 100%;
+}
+
+.section3 .left-block .like-button2 {
+  position: absolute !important;
+  top: 16.1% !important;
+  left: auto !important;
+  right: 14%;
+  width: 20%;
+}
+
+.section3 .left-block .like-button2 img {
+  width: 100%;
+}
+
+.section3 .left-block .cube8 {
+  position: absolute !important;
+  top: 25.2% !important;
+  left: 9.7% !important;
+  width: 25.8%;
+}
+
+.section3 .left-block .cube8 img {
+  width: 100%;
+}
+
+.section3 .left-block .like-button3 {
+  position: absolute !important;
+  bottom: 37.2%;
+  left: 5.7% !important;
+  width: 17.6%;
+}
+
+.section3 .left-block .like-button3 img {
+  width: 100%;
+}
+
+.section4 .left-block {
+  position: relative;
+  z-index: 1;
+  background: #545FFF;
+  background-size: cover;
+}
+
+.section4 .left-block .camera1 {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  width: 35%;
+  transform: translateY(-100%);
+  transition: all 0s 0.7s;
+}
+
+.section4 .left-block .camera2 {
+  position: absolute;
+  bottom: 0;
+  left: -35%;
+  width: 35%;
+  transform-origin: 0 100%;
+  animation: camera2 30s 1.7s linear infinite;
+}
+
+.section4 .left-block .letter-b {
+  position: absolute;
+  left: 55%;
+  bottom: 46%;
+  width: 0;
+  transform: translate(-50%, 50%);
+  transition: all 0s 0.7s;
+}
+
+.section4 .left-block .letter-b img {
+  width: 100%;
+}
+
+.section4 .left-block .letter-b .padlock {
+  position: absolute;
+  left: 14%;
+  bottom: 12%;
+  width: 68%;
+  transform-origin: 50% 50%;
+  transform: perspective(600px) translateZ(800px);
+  transform-style: preserve-3d;
+  transition: all 0s 0.7s;
+}
+
+.section4 .left-block .paper1 {
+  position: absolute;
+  top: 0;
+  left: 1.5%;
+  width: 41%;
+}
+
+.section4 .left-block .paper2 {
+  position: absolute;
+  left: 0;
+  bottom: 23%;
+  width: 41%;
+}
+
+.section4 .left-block .paper3 {
+  position: absolute;
+  right: 0;
+  bottom: 6%;
+  width: 41%;
+}
+
+.section4 .left-block .key1 {
+  position: absolute !important;
+  top: 23% !important;
+  left: 8.5% !important;
+  width: 21%;
+}
+
+.section4 .left-block .key1 img {
+  width: 100%;
+}
+
+.section4 .left-block .key2 {
+  position: absolute !important;
+  top: auto !important;
+  left: auto !important;
+  right: 1%;
+  bottom: 1%;
+  width: 41%;
+}
+
+.section4 .left-block .key2 img {
+  width: 100%;
 }
 
 .overflow {
@@ -1566,7 +1569,7 @@ body {
 .s-row {
   width: 100%;
   max-width: 750px;
-  margin: 4rem auto;
+  margin: auto;
 }
 
 .s-row .btn-blue {
@@ -1574,7 +1577,7 @@ body {
   border: 2px solid #fff;
   background-color: #000;
   padding: 1rem 4rem 1rem 5rem;
-  margin: 0 2rem;
+  margin: 2rem 2rem;
 }
 
 .s-row .btn-blue:hover {
@@ -1748,26 +1751,98 @@ body {
   font-size: 4rem;
   font-family: "MyriadPro-Bold";
   z-index: 100;
-  top: 50%;
+  top: 40%;
   text-align: center;
-  transform: translate(-50%, -50%);
+  left: 0;
 }
 
-/*-------------------------------work-details  start----------------------------------*/
+.work .content {
+  height: calc(100vh - 50px);
+}
+
+a.our-work {
+  text-decoration: none;
+  color: red;
+  font-size: 2rem;
+}
+
+a.our-work img {
+  transform: scale(1.2, 1.2);
+}
+
+a.our-work > img {
+  margin-top: -65px;
+}
+
+section.section1 .right-block {
+  background: #96deff;
+}
+
+section.section2 .right-block {
+  background: #9feeff;
+}
+
+section.section3 .right-block {
+  background: #daff9f;
+}
+
+section.section4 .right-block {
+  background: #545fff;
+}
 
 div.work-1.logo {
   position: fixed;
-  transform: scale(0.3,0.3);
+  transform: scale(0.3, 0.3);
   top: -7rem;
-  left: -15rem;
+  left: -3%;
   z-index: 1;
+}
+
+div.button-back-small-screen {
+  display: none;
 }
 
 div.work-1.button-back {
   position: fixed;
-  top: 2rem;
-  right: 2rem;
+  top: 0;
+  left: 0;
+  width: 7%;
+  height: 100vh;
+  background: #fff;
   z-index: 1;
+  font-size: 3rem;
+  border-right: 1px solid #e5e5e5;
+}
+
+.fa-th-large {
+  position: absolute;
+  top: 2rem;
+  left: 35%;
+  z-index: 2;
+  font-size: 3rem !important;
+  color: #fd0202;
+}
+
+div.work-1.button-back a {
+  transition: all 1s;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+div.work-1.button-back a i:first-child {
+  color: #000;
+}
+
+div.work-1.button-back a:hover {
+  background: #fd0202;
+}
+
+div.work-1.button-back a:hover i {
+  color: #fff;
 }
 
 div.first-slide {
@@ -1783,6 +1858,7 @@ div.first-slide {
 
 div.first-slide p {
   margin-top: 15%;
+  padding: 0 10%;
 }
 
 div.first-slide img {
@@ -1793,6 +1869,7 @@ div.first-slide img {
 div.second-slide, div.third-slide {
   display: flex;
   height: 100vh;
+  margin-left: 7%;
 }
 
 div.second-slide h1, div.third-slide h1 {
@@ -1825,7 +1902,7 @@ div.third-slide div.left-block-work p {
 
 div.second-slide div.right-block-work {
   width: 30%;
-  background-image: url('../img/works/desktop-1.jpg');
+  background-image: url("../img/works/desktop-1.jpg");
   background-size: cover;
   height: 100vh;
 }
@@ -1841,12 +1918,29 @@ div.third-slide div.left-block-work {
 
 div.third-slide div.right-block-work {
   width: 50%;
-  background-image: url('../img/works/mobile-2.jpg');
+  background-image: url("../img/works/mobile-2.jpg");
   background-size: cover;
   height: 100vh;
 }
 
-/*-------------------------------work-details  end----------------------------------*/
+nav.mobile-menu {
+  display: none;
+}
+
+nav.menu {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.menu a {
+  font-family: "MyriadPro-Bold", sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000;
+  padding: 0 5rem;
+}
 
 @media (min-width: 320px) {
   .logo {
@@ -1907,8 +2001,8 @@ div.third-slide div.right-block-work {
   }
   .right-block {
     text-align: left;
-    width: 50%;
-    padding: inherit;
+    width: 55%;
+    padding-left: 3rem;
   }
   .base-title {
     font-size: 10rem;
