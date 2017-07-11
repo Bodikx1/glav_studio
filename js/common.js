@@ -119,7 +119,7 @@ $(function() {
 	var keys = $('#keys').get(0);
 	var parallaxKeys = new Parallax(keys);
 
-});
+	});
 
 $(window).load(function() {
 
