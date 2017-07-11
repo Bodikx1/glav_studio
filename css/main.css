@@ -254,7 +254,7 @@ body {
   background: url(../img/part4.png);
 }
 
-.section1 .left-block {
+/*.section1 .left-block {
   position: relative;
   background: url(../img/section1-bg.jpg) center center no-repeat;
   background-size: cover;
@@ -703,7 +703,479 @@ body {
   left: 45%;
   bottom: 24%;
   width: 0;
+}*/
+
+/*---------------------------new order start----------------------------*/
+.section1 .left-block {
+  position: relative;
+  background: #96deff;
 }
+
+.section1 .left-block .cloud3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 82%;
+}
+
+.section1 .left-block .cloud4 {
+  position: absolute;
+  left: 0;
+  top: 9%;
+  width: 68%;
+}
+
+.section1 .left-block .cloud5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 75.8%;
+}
+
+.section1 .left-block .balloon {
+  position: absolute;
+  left: 65%;
+  top: 11%;
+  width: 30%;
+}
+
+.section1 .left-block .balloon2 {
+  position: absolute;
+  left: 10%;
+  top: 8%;
+  width: 14%;
+}
+
+.section1 .left-block .letter-c {
+  position: absolute;
+  width: 66%;
+  bottom: 20%;
+  left: 18%;
+  transform-origin: 0 50%;
+  transform: perspective(800px) rotate3d(1, 0, 0, 90deg);
+  transform-style: preserve-3d;
+  transition: all 0s 0.7s;
+}
+
+.section1 .left-block .zhuravel1,
+.section1 .left-block .zhuravel2 {
+  position: absolute;
+  width: 33%;
+}
+
+.section1 .left-block .zhuravel1 {
+  top: 36%;
+  left: -33%;
+}
+
+.section1 .left-block .zhuravel2 {
+  left: 62%;
+  top: 55%;
+}
+
+.section1 .left-block .zhuravel3,
+.section1 .left-block .zhuravel4 {
+  position: absolute;
+  width: 22%;
+}
+
+.section1 .left-block .zhuravel3 {
+  bottom: 26%;
+  left: 12%;
+}
+
+.section1 .left-block .zhuravel4 {
+  left: 50.35%;
+  top: 40%;
+}
+
+.section1 .left-block .hand {
+  position: absolute;
+  width: 83.6%;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+}
+
+.section1 .left-block .techniks {
+  position: absolute;
+  left: 52%;
+  bottom: 10.6%;
+  width: 0;
+  transform-origin: 0 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.section1 .left-block .dots {
+  position: absolute;
+  left: 54%;
+  bottom: 9.6%;
+  width: 0;
+  transform-origin: 0 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.section1 .left-block .samolet {
+  position: absolute;
+  left: 45%;
+  bottom: 24%;
+  width: 0;
+}
+
+.section2 .left-block {
+  position: relative;
+  background: url(../img/section2-bg.jpg) center center no-repeat;
+  background-size: cover;
+  perspective-origin: center -50%;
+  perspective: 2000px;
+  overflow: hidden;
+}
+
+.section2 .left-block .letter-d {
+  position: absolute;
+  left: 50%;
+  bottom: 8.8%;
+  width: 87.6%;
+  transform-origin: 0 0;
+  transform: translateX(-50%) perspective(800px) rotate3d(0, 1, 0, 90deg);
+  transform-style: preserve-3d;
+  transition: all 0s 0.7s;
+}
+
+.section2 .left-block .cloud1 {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: calc(100% + 40px);
+}
+
+.section2 .left-block .venera {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, 100%);
+  transition: all 0s 0.7s;
+}
+
+.section2 .left-block .cloud {
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  width: 85%;
+}
+
+.section2 .left-block .cloud2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 73%;
+}
+
+.section2 .left-block .cubes {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.section2 .left-block .cube3 {
+  position: absolute !important;
+  left: 3% !important;
+  top: auto !important;
+  bottom: 7px !important;
+  width: 38%;
+}
+
+.section2 .left-block .cube4 {
+  position: absolute !important;
+  width: 26%;
+  left: auto !important;
+  top: auto !important;
+  right: 6.55% !important;
+  bottom: 5% !important;
+}
+
+.section2 .left-block .cube5 {
+  position: absolute !important;
+  top: 45% !important;
+  right: 8% !important;
+  left: auto !important;
+  width: 23%;
+}
+
+.section2 .left-block .cube3d {
+  width: 10.36vw;
+  height: 10.36vw;
+}
+
+.section2 .left-block .cube3d .side {
+  width: 10.36vw;
+  height: 10.36vw;
+  position: absolute;
+  opacity: .7;
+  background: skyblue;
+}
+
+.section2 .left-block .cube3d .back {
+  transform: translateZ(-5.18vw) rotateZ(90deg);
+}
+
+.section2 .left-block .cube3d .left {
+  transform: translateX(-5.18vw) rotateY(90deg);
+}
+
+.section2 .left-block .cube3d .right {
+  transform: translateX(5.18vw) rotateY(90deg);
+}
+
+.section2 .left-block .cube3d .top {
+  transform: translateY(-5.18vw) rotateX(90deg);
+}
+
+.section2 .left-block .cube3d .bottom {
+  transform: translateY(5.18vw) rotateX(90deg);
+}
+
+.section3 .left-block {
+  position: relative;
+  background: url(../img/section1-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.section3 .left-block .bubbles {
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.section3 .left-block .bubble1 {
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 25% !important;
+  top: auto  !important;
+  width: 0;
+  transition: width 0.7s;
+}
+
+.section3 .left-block .bubble3 {
+  position: absolute;
+  left: 3% !important;
+  top: 1% !important;
+  width: 60px;
+  width: 0;
+  transition: width 0.7s;
+}
+
+.section3 .left-block .bubble4 {
+  position: absolute !important;
+  left: auto !important;
+  right: 4%;
+  top: 25.5%  !important;
+  width: 0;
+  transition: width 0.7s;
+}
+
+.section3 .left-block .bubble {
+  position: absolute !important;
+  width: 0;
+  transition: width 0.7s;
+}
+
+.section3 .left-block .bubble2 {
+  left: 6% !important;
+  bottom: 21% !important;
+  top: auto !important;
+}
+
+.section3 .left-block .bubble5 {
+  left: 20.9% !important;
+  top: 2.5% !important;
+}
+
+.section3 .left-block .bubble6 {
+  left: 12% !important;
+  top: 11.9% !important;
+}
+
+.section3 .left-block .bubble7 {
+  left: 16.4% !important;
+  top: 15.9% !important;
+}
+
+.section3 .left-block .bubble8 {
+  left: 18.4% !important;
+  top: 9.8% !important;
+}
+
+.section3 .left-block .bubble9 {
+  left: auto !important;
+  right: 7.8%;
+  top: 36.2% !important;
+}
+
+.section3 .left-block .s-img {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  display: flex;
+  width: 0;
+  transform: translateX(-50%) rotate(0);
+  transition: all 0s 0.7s;
+}
+
+.section3 .left-block .cube1 {
+  position: absolute;
+  bottom: 1%;
+  left: 2%;
+  width: 32.5%;
+}
+
+.section3 .left-block .youtube-like {
+  position: absolute;
+  top: 18%;
+  left: 13.7%;
+  width: 26%;
+}
+
+.section3 .left-block .youtube-like2 {
+  position: absolute;
+  bottom: 4.5%;
+  right: 17.4%;
+  width: 20%;
+}
+
+.section3 .left-block .cube2 {
+  position: absolute;
+  right: 4.2%;
+  bottom: 32%;
+  width: 19%;
+}
+
+.section3 .left-block .like-button {
+  position: absolute;
+  bottom: 2%;
+  right: 24.4%;
+  width: 30.9%;
+}
+
+.section3 .left-block .dolphins {
+  position: absolute !important;
+  top: 44.9% !important;
+  left: 27.9% !important;
+  width: 54.5%;
+  transform: rotate(15deg);
+}
+
+.section4 .left-block {
+  position: relative;
+  background: #545FFF;
+  background-size: cover;
+}
+
+.section4 .left-block .camera1 {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  width: 35%;
+  transform: translateY(-100%);
+  transition: all 0s 0.7s;
+}
+
+.section4 .left-block .camera2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-100%, 100%);
+  transition: all 0s 0.7s;
+}
+
+.section4 .left-block .letter-b {
+  position: absolute;
+  left: 55%;
+  bottom: 46%;
+  width: 0;
+  transform: translate(-50%, 50%);
+  transition: all 0s 0.7s;
+}
+
+.section4 .left-block .letter-b img {
+  width: 100%;
+}
+
+.section4 .left-block .letter-b .padlock {
+  position: absolute;
+  left: 14%;
+  bottom: 12%;
+  width: 68%;
+  transform-origin: 50% 50%;
+  transform: perspective(600px) translateZ(800px);
+  transform-style: preserve-3d;
+  transition: all 0s 0.7s;
+}
+
+.section4 .left-block .paper1 {
+  position: absolute;
+  top: 0;
+  left: 1.5%;
+  width: 41%;
+}
+
+.section4 .left-block .paper2 {
+  position: absolute;
+  left: 0;
+  bottom: 23%;
+  width: 41%;
+}
+
+.section4 .left-block .paper3 {
+  position: absolute;
+  right: 0;
+  bottom: 6%;
+  width: 41%;
+}
+
+.section4 .left-block .key1 {
+  position: absolute !important;
+  top: 23% !important;
+  left: 8.5% !important;
+  width: 21%;
+}
+
+.section4 .left-block .key2 {
+  position: absolute !important;
+  top: auto !important;
+  left: auto !important;
+  right: 1%;
+  bottom: 1%;
+  width: 41%;
+}
+
+section.section1 .right-block {
+  background: #96deff;
+}
+
+section.section2 .right-block {
+  background: #9feeff;
+}
+
+section.section3 .right-block {
+  background: #daff9f;
+}
+
+section.section4 .right-block {
+  background: #545fff;
+}
+/*---------------------------new order end----------------------------*/
+
+
+
 
 .overflow {
   position: absolute;
@@ -1262,7 +1734,7 @@ body {
 .s-row {
   width: 100%;
   max-width: 750px;
-  margin: 4rem auto;
+  margin: auto;
 }
 
 .s-row .btn-blue {
@@ -1270,7 +1742,7 @@ body {
   border: 2px solid #fff;
   background-color: #000;
   padding: 1rem 4rem 1rem 5rem;
-  margin: 0 2rem;
+  margin: 2rem 2rem;
 }
 
 .s-row .btn-blue:hover {
@@ -1449,21 +1921,98 @@ body {
   left: 0;
 }
 
+.work .content {
+  height: calc(100vh - 50px);
+}
+
+a.our-work {
+  text-decoration: none;
+  color: red;
+  font-size: 2rem;
+}
+
+a.our-work img {
+  transform: scale(1.2,1.2);
+}
+
+a.our-work > img {
+  margin-top: -65px;
+}
+
+nav.mobile-menu {
+  display: none;
+}
+
+nav.menu {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.menu a {
+  font-family: "MyriadPro-Bold", sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000;
+  padding: 0 5rem;
+}
+
 /*-------------------------------work-details  start----------------------------------*/
 
 div.work-1.logo {
   position: fixed;
   transform: scale(0.3,0.3);
   top: -7rem;
-  left: -15rem;
+  left: -3%;
   z-index: 1;
+}
+
+div.button-back-small-screen {
+  display: none;
 }
 
 div.work-1.button-back {
   position: fixed;
-  top: 2rem;
-  right: 2rem;
+  top: 0;
+  left: 0;
+  width: 7%;
+  height: 100vh;
+  background: #fff;
   z-index: 1;
+  font-size: 3rem;
+  border-right: 1px solid #e5e5e5;
+}
+
+.fa-th-large {
+  position: absolute;
+  top: 2rem;
+  left: 35%;
+  z-index: 2;
+  font-size: 3rem !important;
+  color: #fd0202;
+}
+
+div.work-1.button-back a {
+  transition: all 1s;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+div.work-1.button-back a i:first-child {
+  color: #000;
+}
+
+div.work-1.button-back a:hover {
+  background: #fd0202;
+}
+
+div.work-1.button-back a:hover i {
+  color: #fff;
 }
 
 div.first-slide {
@@ -1479,6 +2028,7 @@ div.first-slide {
 
 div.first-slide p {
   margin-top: 15%;
+  padding: 0 10%;
 }
 
 div.first-slide img {
@@ -1489,6 +2039,7 @@ div.first-slide img {
 div.second-slide, div.third-slide {
   display: flex;
   height: 100vh;
+  margin-left: 7%;
 }
 
 div.second-slide h1, div.third-slide h1 {
@@ -1603,15 +2154,15 @@ div.third-slide div.right-block-work {
   }
   .right-block {
     text-align: left;
-    width: 50%;
-    padding: inherit;
+    width: 55%;
+    padding-left: 3rem;
   }
   .base-title {
     font-size: 10rem;
     line-height: 3rem;
   }
   #fp-nav.right {
-    visibility: visible;
+    visibility: hidden;
   }
   .form-block {
     width: 310px;

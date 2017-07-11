@@ -16,12 +16,12 @@ $(function() {
 			$(this).addClass('active');
 	});
 
-	/* placeholder*/	   
+	/* placeholder*/
 	$('input, textarea').each(function(){
  		var placeholder = $(this).attr('placeholder');
  		$(this).focus(function(){ $(this).attr('placeholder', '');});
- 		$(this).focusout(function(){			 
- 			$(this).attr('placeholder', placeholder);  			
+ 		$(this).focusout(function(){
+ 			$(this).attr('placeholder', placeholder);
  		});
  	});
 	/* placeholder*/
@@ -118,7 +118,7 @@ $(function() {
 
 	var keys = $('#keys').get(0);
 	var parallaxKeys = new Parallax(keys);
-	
+
 });
 
 $(window).load(function() {
@@ -127,3 +127,10 @@ $(window).load(function() {
 	$(".loader").delay(100).fadeOut("slow");
 
 });
+
+function mobileMenuToggle(){
+	var mobileList = document.querySelector('div.mobile-list');
+	mobileList.classList.toggle('visible');
+}
+
+document.querySelector('i.fa').addEventListener('click', mobileMenuToggle);
