@@ -256,6 +256,7 @@ body {
 
 .section1 .left-block {
   position: relative;
+  z-index: 1;
   background: url(../img/section2-bg.jpg) center center no-repeat;
   background-size: cover;
   perspective-origin: center -50%;
@@ -487,6 +488,7 @@ body {
 
 .section2 .left-block {
   position: relative;
+  z-index: 1;
   background: #96deff;
 }
 
@@ -609,6 +611,7 @@ body {
 
 .section3 .left-block {
   position: relative;
+  z-index: 1;
   background: url(../img/section1-bg.jpg) center center no-repeat;
   background-size: cover;
   perspective-origin: center -50%;
@@ -827,6 +830,7 @@ body {
 
 .section4 .left-block {
   position: relative;
+  z-index: 1;
   background: #545FFF;
   background-size: cover;
 }
@@ -1565,7 +1569,7 @@ body {
 .s-row {
   width: 100%;
   max-width: 750px;
-  margin: 4rem auto;
+  margin: auto;
 }
 
 .s-row .btn-blue {
@@ -1573,7 +1577,7 @@ body {
   border: 2px solid #fff;
   background-color: #000;
   padding: 1rem 4rem 1rem 5rem;
-  margin: 0 2rem;
+  margin: 2rem 2rem;
 }
 
 .s-row .btn-blue:hover {
@@ -1747,9 +1751,9 @@ body {
   font-size: 4rem;
   font-family: "MyriadPro-Bold";
   z-index: 100;
-  top: 50%;
+  top: 40%;
   text-align: center;
-  transform: translate(-50%, -50%);
+  left: 0;
 }
 
 .work .content {
@@ -1768,6 +1772,155 @@ a.our-work img {
 
 a.our-work > img {
   margin-top: -65px;
+}
+
+section.section1 .right-block {
+  background: #96deff;
+}
+
+section.section2 .right-block {
+  background: #9feeff;
+}
+
+section.section3 .right-block {
+  background: #daff9f;
+}
+
+section.section4 .right-block {
+  background: #545fff;
+}
+
+div.work-1.logo {
+  position: fixed;
+  transform: scale(0.3, 0.3);
+  top: -7rem;
+  left: -3%;
+  z-index: 1;
+}
+
+div.button-back-small-screen {
+  display: none;
+}
+
+div.work-1.button-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 7%;
+  height: 100vh;
+  background: #fff;
+  z-index: 1;
+  font-size: 3rem;
+  border-right: 1px solid #e5e5e5;
+}
+
+.fa-th-large {
+  position: absolute;
+  top: 2rem;
+  left: 35%;
+  z-index: 2;
+  font-size: 3rem !important;
+  color: #fd0202;
+}
+
+div.work-1.button-back a {
+  transition: all 1s;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+div.work-1.button-back a i:first-child {
+  color: #000;
+}
+
+div.work-1.button-back a:hover {
+  background: #fd0202;
+}
+
+div.work-1.button-back a:hover i {
+  color: #fff;
+}
+
+div.first-slide {
+  background: #3c5a99;
+  text-align: center;
+  color: #fff;
+  font-size: 62px;
+  font-family: "MyriadPro-Bold";
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+div.first-slide p {
+  margin-top: 15%;
+  padding: 0 10%;
+}
+
+div.first-slide img {
+  max-width: 80%;
+  margin-top: 0;
+}
+
+div.second-slide, div.third-slide {
+  display: flex;
+  height: 100vh;
+  margin-left: 7%;
+}
+
+div.second-slide h1, div.third-slide h1 {
+  margin-top: 30%;
+}
+
+div.second-slide p, div.third-slide p {
+  height: 155px;
+  overflow: hidden;
+}
+
+div.second-slide div.left-block-work {
+  width: 70%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-family: "MyriadPro-Bold";
+  height: 100vh;
+  background: #f1f3f3;
+}
+
+div.second-slide div.left-block-work h1,
+div.third-slide div.left-block-work h1 {
+  font-size: 50px;
+}
+
+div.second-slide div.left-block-work p,
+div.third-slide div.left-block-work p {
+  font-size: 20px;
+}
+
+div.second-slide div.right-block-work {
+  width: 30%;
+  background-image: url("../img/works/desktop-1.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+div.third-slide div.left-block-work {
+  width: 50%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-family: "MyriadPro-Bold";
+  height: 100vh;
+  background: #fff;
+}
+
+div.third-slide div.right-block-work {
+  width: 50%;
+  background-image: url("../img/works/mobile-2.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 
 nav.mobile-menu {
@@ -1848,8 +2001,8 @@ nav.menu a {
   }
   .right-block {
     text-align: left;
-    width: 50%;
-    padding: inherit;
+    width: 55%;
+    padding-left: 3rem;
   }
   .base-title {
     font-size: 10rem;
