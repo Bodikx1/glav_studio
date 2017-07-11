@@ -193,7 +193,7 @@ $(function() {
 		invertY: false
 	});
 
-	$('.section1').mousemove(function(e) {
+	$('.section3').mousemove(function(e) {
 		if($(this).hasClass('fp-completely')) {
 			var wind = $(window),
 				x = wind.width()/2,
@@ -208,14 +208,14 @@ $(function() {
 		}
 	})
 
-	$('.section1').mouseout(function() {
+	$('.section3').mouseout(function() {
 		$('.s-img img').css({
 			transform: 'perspective(300px)',
 			transition: 'all 0.7s'
 		})
 	})
 
-	$('.section2').mousemove(function(e) {
+	$('.section1').mousemove(function(e) {
 		if($(this).hasClass('fp-completely')) {
 			var wind = $(window),
 				x = wind.width()/2,
@@ -236,7 +236,7 @@ $(function() {
 		}
 	})
 
-	$('.section2').mouseout(function() {
+	$('.section1').mouseout(function() {
 		$('.venera img').css({
 			transform: 'none',
 			transition: 'all 0.7s'
@@ -249,7 +249,7 @@ $(function() {
 	})
 
 
-	$('.section3').mousemove(function(e) {
+	$('.section4').mousemove(function(e) {
 		if($(this).hasClass('fp-completely')) {
 			var wind = $(window),
 				x = wind.width()/2,
@@ -264,7 +264,7 @@ $(function() {
 		}
 	})
 
-	$('.section3').mouseout(function() {
+	$('.section4').mouseout(function() {
 		$('.letter-b').css({
 			transform: 'perspective(300px) translate(-50%, 50%)',
 			transition: 'all 0.7s'
@@ -272,7 +272,7 @@ $(function() {
 	})
 
 
-	$('.section4').mousemove(function(e) {
+	$('.section2').mousemove(function(e) {
 		if($(this).hasClass('fp-completely')) {
 			var wind = $(window),
 				x = wind.width()/2,
@@ -287,7 +287,7 @@ $(function() {
 		}
 	})
 
-	$('.section4').mouseout(function() {
+	$('.section2').mouseout(function() {
 		$('.letter-c img').css({
 			transform: 'perspective(300px)',
 			transition: 'all 0.7s'
