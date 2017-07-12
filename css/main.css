@@ -287,7 +287,7 @@ body {
 
 .section1 .left-block .venera {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 50%;
   width: 50%;
   transform: translate(-50%, 100%);
@@ -1775,11 +1775,11 @@ a.our-work > img {
 }
 
 section.section1 .right-block {
-  background: #96deff;
+  background: #9feeff;
 }
 
 section.section2 .right-block {
-  background: #9feeff;
+  background: #96deff;
 }
 
 section.section3 .right-block {
@@ -1987,7 +1987,7 @@ nav.menu a {
     padding-top: 0;
   }
   .base-form input::placeholder {
-    font-size: 24px;
+    font-size: 2rem;
   }
 }
 
