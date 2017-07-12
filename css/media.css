@@ -137,7 +137,7 @@
 	}
 
 	.right-block .base-title {
-		margin-top: 30px;
+		margin-top: 20px;
 	}
 
 /*-------------------------------work-details----------------------------------*/
@@ -258,15 +258,16 @@
   .left-block {
     display: flex;
     width: 100%;
-		max-height: 65%;
+		max-height: 60%;
   }
 
 	.right-block {
     position: absolute;
     width: 100%;
-		max-height: 35%;
+		min-height: 40%;
     bottom: 0;
 		left: auto;
+		padding-top: 2px;
   }
 
 	.right-block .base-text {
