@@ -258,13 +258,13 @@
   .left-block {
     display: flex;
     width: 100%;
-		max-height: 73%;
+		max-height: 65%;
   }
 
 	.right-block {
     position: absolute;
     width: 100%;
-		max-height: 30%;
+		max-height: 35%;
     bottom: 0;
 		left: auto;
   }
@@ -318,7 +318,7 @@
 	}
 
 	input.email {
-		margin-top: 10px;
+		margin-top: 20px;
 		margin-bottom: 10px;
 	}
 
