@@ -1743,7 +1743,7 @@ body {
   background-color: rgba(59, 89, 152, 0.5);
 }*/
 
-.title-work {
+/*.title-work {
   color: #fff;
   position: absolute;
   width: 100%;
@@ -1754,10 +1754,32 @@ body {
   top: 40%;
   text-align: center;
   left: 0;
-}
+}*/
 
 .work .content {
   height: calc(100vh - 50px);
+}
+
+.work .two .fp-tableCell,
+.work .three .fp-tableCell {
+  vertical-align: baseline;
+}
+
+.work .three .work-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.work .three .work-item:nth-child(1) {
+  background-color: #777;
+}
+
+.work .three .work-item:nth-child(2) {
+  background-color: #111;
+}
+
+.work .three .work-item a {
+  height: auto;
 }
 
 a.our-work {
@@ -1932,6 +1954,10 @@ nav.menu {
   height: 50px;
   justify-content: center;
   align-items: center;
+}
+
+.two nav.menu, .three nav.menu {
+  margin: auto;
 }
 
 nav.menu a {
