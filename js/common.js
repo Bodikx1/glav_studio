@@ -257,16 +257,21 @@ $(function() {
 				rotateY = -(e.clientX - x)/x*5,
 				rotateX = (e.clientY - y)/y*5;
 
-			$('.letter-b').css({
-				transform: 'perspective(300px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translate(-50%, 50%)',
+			$('.letter-b img.letter').css({
+				transform: 'translateZ(-1px) perspective(300px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)',
+				transition: 'none'
+			})
+
+			$('.letter-b img.padlock').css({
+				transform: 'translateZ(1px) perspective(300px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)',
 				transition: 'none'
 			})
 		}
 	})
 
 	$('.section4').mouseout(function() {
-		$('.letter-b').css({
-			transform: 'perspective(300px) translate(-50%, 50%)',
+		$('.letter-b img').css({
+			transform: 'perspective(300px)',
 			transition: 'all 0.7s'
 		})
 	})
