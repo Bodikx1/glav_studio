@@ -256,7 +256,7 @@ body {
 
 .section1 .left-block {
   position: relative;
-  z-index: 1;
+  z-index: 50;
   background: url(../img/section2-bg.jpg) center center no-repeat;
   background-size: cover;
   perspective-origin: center -50%;
@@ -290,6 +290,7 @@ body {
   bottom: 10px;
   left: 50%;
   width: 50%;
+  z-index: 51;
   transform: translate(-50%, 100%);
   transition: all 0s 0.7s;
 }
@@ -488,7 +489,7 @@ body {
 
 .section2 .left-block {
   position: relative;
-  z-index: 1;
+  z-index: 50;
   background: #96deff;
 }
 
@@ -611,7 +612,7 @@ body {
 
 .section3 .left-block {
   position: relative;
-  z-index: 1;
+  z-index: 50;
   background: url(../img/section1-bg.jpg) center center no-repeat;
   background-size: cover;
   perspective-origin: center -50%;
@@ -830,7 +831,7 @@ body {
 
 .section4 .left-block {
   position: relative;
-  z-index: 1;
+  z-index: 50;
   background: #545FFF;
   background-size: cover;
 }
@@ -858,6 +859,7 @@ body {
   left: 55%;
   bottom: 46%;
   width: 0;
+  z-index: 50;
   transform: translate(-50%, 50%);
   transition: all 0s 0.7s;
 }
@@ -871,6 +873,7 @@ body {
   left: 14%;
   bottom: 12%;
   width: 68%;
+  z-index: 51;
   transform-origin: 50% 50%;
   transform: perspective(600px) translateZ(800px);
   transform-style: preserve-3d;
@@ -882,6 +885,7 @@ body {
   top: 0;
   left: 1.5%;
   width: 41%;
+  z-index: 49;
 }
 
 .section4 .left-block .paper2 {
@@ -889,6 +893,7 @@ body {
   left: 0;
   bottom: 23%;
   width: 41%;
+  z-index: 49;
 }
 
 .section4 .left-block .paper3 {
@@ -896,6 +901,7 @@ body {
   right: 0;
   bottom: 6%;
   width: 41%;
+  z-index: 49;
 }
 
 .section4 .left-block .key1 {
@@ -1628,27 +1634,27 @@ body {
   color: #fff;
   opacity: 0;
   font-family: "ProximaNova-Light";
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .base-form input:focus *:-moz-placeholder {
   color: #fff;
   opacity: 0;
   font-family: "ProximaNova-Light";
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .base-form input:focus *::-moz-placeholder {
   color: #fff;
   opacity: 0;
   font-family: "ProximaNova-Light";
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .base-form input:focus *:-ms-input-placeholder {
   color: #fff;
   font-family: "ProximaNova-Light";
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .base-form input:focus:before {
@@ -1663,27 +1669,27 @@ body {
   color: #fff;
   opacity: 1;
   font-family: "ProximaNova-Light";
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .base-form *:-moz-placeholder {
   color: #fff;
   opacity: 1;
   font-family: "ProximaNova-Light";
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .base-form *::-moz-placeholder {
   color: #fff;
   opacity: 1;
   font-family: "ProximaNova-Light";
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .base-form *:-ms-input-placeholder {
   color: #fff;
   font-family: "ProximaNova-Light";
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .work .content {
