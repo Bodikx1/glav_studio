@@ -256,7 +256,7 @@ body {
 
 .section1 .left-block {
   position: relative;
-  z-index: 50;
+  z-index: 0;
   background: url(../img/section2-bg.jpg) center center no-repeat;
   background-size: cover;
   perspective-origin: center -50%;
@@ -268,6 +268,7 @@ body {
   left: 50%;
   bottom: 8.8%;
   width: 87.6%;
+  z-index: 0;
   transform-origin: 0 0;
   transform: translateX(-50%) perspective(800px) rotate3d(0, 1, 0, 90deg);
   transform-style: preserve-3d;
@@ -282,6 +283,7 @@ body {
   position: absolute;
   left: -20px;
   top: 0;
+  z-index: 0;
   width: calc(100% + 40px);
 }
 
@@ -290,7 +292,7 @@ body {
   bottom: 10px;
   left: 50%;
   width: 50%;
-  z-index: 51;
+  z-index: 0;
   transform: translate(-50%, 100%);
   transition: all 0s 0.7s;
 }
@@ -302,6 +304,7 @@ body {
 
 .section1 .left-block .cloud {
   position: absolute;
+  z-index: 0;
   left: -20px;
   bottom: 0;
   width: 85%;
@@ -309,6 +312,7 @@ body {
 
 .section1 .left-block .cloud2 {
   position: absolute;
+  z-index: 0;
   right: 0;
   top: 0;
   width: 73%;
@@ -316,6 +320,7 @@ body {
 
 .section1 .left-block .cubes {
   position: absolute !important;
+  z-index: 0;
   top: 0;
   right: 0;
   bottom: 0;
@@ -324,6 +329,7 @@ body {
 
 .section1 .left-block .cube3 {
   position: absolute !important;
+  z-index: 0;
   left: 3% !important;
   top: auto !important;
   bottom: 7px !important;
@@ -332,6 +338,7 @@ body {
 
 .section1 .left-block .cube4 {
   position: absolute !important;
+  z-index: 0;
   width: 26%;
   left: auto !important;
   top: auto !important;
@@ -340,6 +347,7 @@ body {
 }
 
 .section1 .left-block .cube5 {
+  z-index: 0;
   position: absolute !important;
   top: 45% !important;
   right: 8% !important;
@@ -349,6 +357,7 @@ body {
 
 .section1 .left-block .cube6 {
   position: absolute !important;
+  z-index: 0;
   top: 30% !important;
   right: 15%;
   left: auto !important;
@@ -358,6 +367,7 @@ body {
 
 .section1 .left-block .cube7 {
   position: absolute !important;
+  z-index: 0;
   top: 20% !important;
   left: 15% !important;
   width: 9vw;
@@ -375,6 +385,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: 0;
   opacity: .3;
   background: #00C6DC;
 }
@@ -414,6 +425,7 @@ body {
   width: 9vw;
   height: 9vw;
   position: absolute;
+  z-index: 0;
   opacity: .3;
   background: #00C6DC;
 }
@@ -422,6 +434,7 @@ body {
   width: 5vw;
   height: 5vw;
   position: absolute;
+  z-index: 0;
   top: 20%;
   left: 20%;
   opacity: .8;
@@ -478,6 +491,7 @@ body {
 
 .section1 .left-block .border {
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
   width: 61%;
@@ -489,12 +503,13 @@ body {
 
 .section2 .left-block {
   position: relative;
-  z-index: 50;
+  z-index: 0;
   background: #96deff;
 }
 
 .section2 .left-block .cloud3 {
   position: absolute;
+  z-index: 0;
   right: 0;
   top: 0;
   width: 82%;
@@ -502,6 +517,7 @@ body {
 
 .section2 .left-block .cloud4 {
   position: absolute;
+  z-index: 0;
   left: 0;
   top: 9%;
   width: 68%;
@@ -509,6 +525,7 @@ body {
 
 .section2 .left-block .cloud5 {
   position: absolute;
+  z-index: 0;
   bottom: 0;
   right: 0;
   width: 75.8%;
@@ -516,6 +533,7 @@ body {
 
 .section2 .left-block .balloon {
   position: absolute;
+  z-index: 0;
   left: 65%;
   top: 11%;
   width: 30%;
@@ -523,6 +541,7 @@ body {
 
 .section2 .left-block .balloon2 {
   position: absolute;
+  z-index: 0;
   left: 10%;
   top: 8%;
   width: 14%;
@@ -530,6 +549,7 @@ body {
 
 .section2 .left-block .letter-c {
   position: absolute;
+  z-index: 0;
   width: 66%;
   bottom: 20%;
   left: 18%;
@@ -546,6 +566,7 @@ body {
 .section2 .left-block .zhuravel1,
 .section2 .left-block .zhuravel2 {
   position: absolute;
+  z-index: 0;
   width: 33%;
 }
 
@@ -562,6 +583,7 @@ body {
 .section2 .left-block .zhuravel3,
 .section2 .left-block .zhuravel4 {
   position: absolute;
+  z-index: 0;
   width: 22%;
 }
 
@@ -577,6 +599,7 @@ body {
 
 .section2 .left-block .hand {
   position: absolute;
+  z-index: 0;
   width: 83.6%;
   bottom: 0;
   right: 0;
@@ -585,6 +608,7 @@ body {
 
 .section2 .left-block .techniks {
   position: absolute;
+  z-index: 0;
   left: 52%;
   bottom: 10.6%;
   width: 0;
@@ -595,6 +619,7 @@ body {
 
 .section2 .left-block .dots {
   position: absolute;
+  z-index: 0;
   left: 54%;
   bottom: 9.6%;
   width: 0;
@@ -605,6 +630,7 @@ body {
 
 .section2 .left-block .samolet {
   position: absolute;
+  z-index: 0;
   left: 45%;
   bottom: 24%;
   width: 0;
@@ -612,7 +638,7 @@ body {
 
 .section3 .left-block {
   position: relative;
-  z-index: 50;
+  z-index: 0;
   background: url(../img/section1-bg.jpg) center center no-repeat;
   background-size: cover;
   perspective-origin: center -50%;
@@ -621,6 +647,7 @@ body {
 
 .section3 .left-block .bubbles {
   position: absolute !important;
+  z-index: 0;
   left: 0;
   top: 0;
   bottom: 0;
@@ -629,6 +656,7 @@ body {
 
 .section3 .left-block .bubble1 {
   position: absolute !important;
+  z-index: 0;
   left: 0 !important;
   bottom: 25% !important;
   top: auto  !important;
@@ -638,6 +666,7 @@ body {
 
 .section3 .left-block .bubble3 {
   position: absolute;
+  z-index: 0;
   left: 3% !important;
   top: 1% !important;
   width: 0;
@@ -646,6 +675,7 @@ body {
 
 .section3 .left-block .bubble4 {
   position: absolute !important;
+  z-index: 0;
   left: auto !important;
   right: 4%;
   top: 25.5%  !important;
@@ -655,6 +685,7 @@ body {
 
 .section3 .left-block .bubble {
   position: absolute !important;
+  z-index: 0;
   width: 0;
   transition: width 0.7s;
 }
@@ -693,6 +724,7 @@ body {
 
 .section3 .left-block .s-img {
   position: absolute;
+  z-index: 0;
   bottom: 3%;
   left: 50%;
   width: 0;
@@ -707,6 +739,7 @@ body {
 
 .section3 .left-block .cube1 {
   position: absolute;
+  z-index: 0;
   bottom: 1%;
   left: 2%;
   width: 32.5%;
@@ -718,6 +751,7 @@ body {
 
 .section3 .left-block .youtube-like {
   position: absolute !important;
+  z-index: 0;
   top: 18% !important;
   left: 13.7% !important;
   width: 26%;
@@ -729,6 +763,7 @@ body {
 
 .section3 .left-block .youtube-like2 {
   position: absolute;
+  z-index: 0;
   bottom: 17.4%;
   right: 4.5%;
   width: 20%;
@@ -740,6 +775,7 @@ body {
 
 .section3 .left-block .cube2 {
   position: absolute;
+  z-index: 0;
   right: 4.2%;
   bottom: 32%;
   width: 19%;
@@ -751,6 +787,7 @@ body {
 
 .section3 .left-block .like-button {
   position: absolute;
+  z-index: 0;
   bottom: 2%;
   right: 24.4%;
   width: 30.9%;
@@ -762,6 +799,7 @@ body {
 
 .section3 .left-block .dolphin1 {
   position: absolute !important;
+  z-index: 0;
   bottom: 18.8% !important;
   left: 36.9% !important;
   width: 41.2%;
@@ -774,6 +812,7 @@ body {
 
 .section3 .left-block .dolphin2 {
   position: absolute !important;
+  z-index: 0;
   bottom: 16.3% !important;
   left: 27.9% !important;
   width: 54.7%;
@@ -786,6 +825,7 @@ body {
 
 .section3 .left-block .youtube-like3 {
   position: absolute !important;
+  z-index: 0;
   top: 8.1% !important;
   left: 48.2% !important;
   width: 14%;
@@ -797,6 +837,7 @@ body {
 
 .section3 .left-block .like-button2 {
   position: absolute !important;
+  z-index: 0;
   top: 16.1% !important;
   left: auto !important;
   right: 14%;
@@ -809,6 +850,7 @@ body {
 
 .section3 .left-block .cube8 {
   position: absolute !important;
+  z-index: 0;
   top: 25.2% !important;
   left: 9.7% !important;
   width: 25.8%;
@@ -820,6 +862,7 @@ body {
 
 .section3 .left-block .like-button3 {
   position: absolute !important;
+  z-index: 0;
   bottom: 37.2%;
   left: 5.7% !important;
   width: 17.6%;
@@ -831,13 +874,14 @@ body {
 
 .section4 .left-block {
   position: relative;
-  z-index: 50;
+  z-index: 0;
   background: #545FFF;
   background-size: cover;
 }
 
 .section4 .left-block .camera1 {
   position: absolute;
+  z-index: 0;
   top: 0;
   right: 5%;
   width: 35%;
@@ -847,6 +891,7 @@ body {
 
 .section4 .left-block .camera2 {
   position: absolute;
+  z-index: 0;
   bottom: 0;
   left: -35%;
   width: 35%;
@@ -856,10 +901,10 @@ body {
 
 .section4 .left-block .letter-b {
   position: absolute;
+  z-index: 0;
   left: 55%;
   bottom: 46%;
   width: 0;
-  z-index: 50;
   transform: translate(-50%, 50%);
   transition: all 0s 0.7s;
 }
@@ -870,10 +915,10 @@ body {
 
 .section4 .left-block .letter-b .padlock {
   position: absolute;
+  z-index: 0;
   left: 14%;
   bottom: 12%;
   width: 68%;
-  z-index: 51;
   transform-origin: 50% 50%;
   transform: perspective(600px) translateZ(800px);
   transform-style: preserve-3d;
@@ -882,30 +927,31 @@ body {
 
 .section4 .left-block .paper1 {
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 1.5%;
   width: 41%;
-  z-index: 49;
 }
 
 .section4 .left-block .paper2 {
   position: absolute;
+  z-index: 0;
   left: 0;
   bottom: 23%;
   width: 41%;
-  z-index: 49;
 }
 
 .section4 .left-block .paper3 {
   position: absolute;
+  z-index: 0;
   right: 0;
   bottom: 6%;
   width: 41%;
-  z-index: 49;
 }
 
 .section4 .left-block .key1 {
   position: absolute !important;
+  z-index: 0;
   top: 23% !important;
   left: 8.5% !important;
   width: 21%;
@@ -917,6 +963,7 @@ body {
 
 .section4 .left-block .key2 {
   position: absolute !important;
+  z-index: 0;
   top: auto !important;
   left: auto !important;
   right: 1%;
